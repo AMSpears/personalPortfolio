@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Samsung from "../images/samsungLogo.png"
 import Verizon from "../images/verizonLogo.png"
+import {
+  FaGithub, FaCodepen, FaLinkedinIn
+} from 'react-icons/fa';
 
 import "../components/homePage.scss"
 
@@ -44,7 +47,12 @@ const HomePage = () => (
         <div className ="footerDetails">
           <div className = "social">
             <h1>Social</h1>
-          </div>
+            <div class ="icons">
+              <div><FaGithub/></div>
+              <div><FaCodepen/></div>
+              <div><FaLinkedinIn/></div>
+            </div>
+            </div>
           <div className = "contact">
             <h1>Contact</h1>
             <p>angie.spears809@gmail.com</p>
