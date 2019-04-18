@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.imgPlaceholder {
+    background-color: yellow;
+    height: 600px;
+}
+
+.intro {
+    background-color:#73D0F9;
+    height: inherit;
+    padding: 40px 50px;
+    
+    @media only screen and (min-width: 1024px) {
+        padding: 40px 100px;
+
+    }
+    
+    h1 {
+        text-align: center;
+        color: #ffffff;
+        font-size: 18px;
+        font-family: "Roboto";
+        text-transform: uppercase;
+        margin-bottom:10px;
+    }
+    hr {
+        background-color: #5E2C8B;
+        height:4px;
+        width: 94px;
+        margin: auto;
+    }
+    p {
+        font-family: "Roboto";
+        font-size: 20px;
+        text-align: left;
+        line-height: 28px;
+        margin: 24px auto;
+
+           @media only screen and (min-width: 1024px) {
+                font-size: 40px;
+                line-height:48px;
+                margin: 44px auto;
+           }
+    }
+}
+
+.brands {
+    height: inherit;
+    padding: 40px 50px;
+
+    h1 {
+        text-align: center;
+        color: #000000;
+        font-size: 18px;
+        font-family: "Roboto";
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        background-color: #73D0F9;
+        height: 4px;
+        width: 94px;
+        margin: auto;
+    }
+     .brandLogos {
+        display: flex;
+        justify-content: center;
+    }
+ }
+
+.technologies {
+    height: inherit;
+    padding: 20px 50px;
+
+    h1 {
+        text-align: center;
+        color: #000000;
+        font-size: 18px;
+        font-family: "Roboto";
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    hr {
+        background-color: #73D0F9;
+        height: 4px;
+        width: 94px;
+        margin: auto;
+    }
+
+}
+
+.projects {
+    height: inherit;
+    padding: 20px 50px;
+
+    h1 {
+        text-align: center;
+        color: #000000;
+        font-size: 18px;
+        font-family: "Roboto";
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        background-color: #73D0F9;
+        height: 4px;
+        width: 94px;
+        margin: auto;
+    }
+
+}
+
+footer {
+    background-color: #5E2C8B;
+    height: inherit;
+    padding: 50px auto;
+
+    .footerDetails {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding:40px;
+
+        @media only screen and (min-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: 400;
+            font-family: "Roboto";
+        }
+        p {
+            font-family: "Roboto";
+            font-size: 18px;
+            color: #ffffff;
+        }
+    }
+
+}
