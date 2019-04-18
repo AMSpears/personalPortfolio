@@ -9,9 +9,9 @@ const Header = ({ siteTitle, home, aboutMe, resume }) => (
   <header>
       <nav>
         <ul>
-          <li><a  href='./' id= 'logo'> {siteTitle}</a></li>
+          <li><a  href='/' id= 'logo'> {siteTitle}</a></li>
           <div className= 'linksContainer'>
-            <li><a href= './' className= 'links'>{home}</a></li>
+            <li><a href= '/' className= 'links'>{home}</a></li>
             <li><a href= '#aboutMe' className= 'links'>{aboutMe}</a></li>
             <li><a href= {Resume} target= "blank"  className= 'links' id= 'resume'>{resume}</a></li>
           </div>

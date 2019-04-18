@@ -8,9 +8,9 @@ import {
   FaGithub, FaCodepen, FaLinkedinIn
 } from 'react-icons/fa';
 
-import "../components/homePage.scss"
+import "../components/index.scss"
 
-const HomePage = () => (
+const IndexPage = () => (
   <Layout>
     <SEO title="Angie Spears" keywords={[`gatsby`, `application`, `react`, `front-end software Engineer`, `software Engineer`, `nyc`]} />
     <a id="home">
@@ -55,7 +55,7 @@ const HomePage = () => (
             </div>
           <div className = "contact">
             <h1>Contact</h1>
-            <p>angie.spears809@gmail.com</p>
+            <p>hello@angiespears.com</p>
             <p>571-659-8072</p>
 
           </div>
@@ -68,4 +68,4 @@ const HomePage = () => (
 )
 
 
-export default HomePage
+export default IndexPage
