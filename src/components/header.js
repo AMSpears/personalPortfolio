@@ -1,42 +1,37 @@
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import "gatsby-plugin-sass"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+import "./header.scss"
+
+const Header = ({ siteTitle, home, aboutMe, resume }) => (
+  <header>
+      <nav>
+        <ul>
+          <li><a  href='/' id= "logo"> {siteTitle}</a></li>
+          <div class= "linksContainer">
+            <li><a href= '#' class= "links">{home}</a></li>
+            <li><a href= '#' class= "links">{aboutMe}</a></li>
+            <li><a href= '#' class= "links" id= "resume">{resume}</a></li>
+          </div>
+        </ul>
+      </nav>
   </header>
 )
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  home: PropTypes.string,
+  aboutMe: PropTypes.string,
+  resume: PropTypes.string,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
+  home: `Home`,
+  aboutMe: `About Me`,
+  resume: `Resume`
 }
 
 export default Header
