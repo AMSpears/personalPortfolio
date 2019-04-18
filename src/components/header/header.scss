@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 nav {
-       box-sizing: border-box;
      ul {
           display: flex;
           justify-content: space-between;
@@ -8,8 +7,11 @@ nav {
           white-space: nowrap;
           overflow: auto;
           font-family: "Roboto";
-          padding: 20px 0;
+          padding: 40px 20px;
          
+          @media only screen and (min-width: 1024px) { 
+               padding: 30px 100px;
+          }
 
           li {
                
@@ -17,13 +19,14 @@ nav {
                     text-decoration: none;
                     cursor: pointer;
                }
-
-              #logo {
-                    color: #5E2C8B;
-                    font-size: 40px;
-                    font-weight: 500;
-               }
           }
+
+          #logo {
+               color: #5E2C8B;
+               font-size: 40px;
+               font-weight: 500;
+          }
+
           .linksContainer {
                display: flex;
 
