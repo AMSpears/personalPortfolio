@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// font stack 
+$font-stack: "Roboto";
+
+// color pallete 
+$primary-color:#5E2C8B;
+$secondary-color:#73D0F9;
+$black: #000000;
+$white: #ffffff;
+
 nav {
      ul {
           display: flex;
@@ -6,7 +16,7 @@ nav {
           list-style: none;
           white-space: nowrap;
           overflow: hidden;
-          font-family: "Roboto";
+          font-family: $font-stack;
           padding: 24px 27px 13px 27px;
           margin:0;
          
@@ -29,7 +39,7 @@ nav {
           }
 
           #logo {
-               color: #5E2C8B;
+               color: $primary-color;
                font-size: 24px;
                font-weight: 500;
 
@@ -43,7 +53,7 @@ nav {
                display: flex;
 
                .links {
-                    color: black;
+                    color: $black;
                     text-transform: uppercase;
                     margin: auto 40px auto 0;
                     font-size: 14px;
@@ -55,9 +65,9 @@ nav {
                }
 
                #resume {
-                    background-color: #5E2C8B;
+                    background-color: $primary-color;
                     border-radius: 18px;
-                    color: white;
+                    color: $white;
                     padding: 8px 24px;
                }
           }

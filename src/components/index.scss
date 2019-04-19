@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+// font stack 
+$font-stack: "Roboto";
+
+// color pallete 
+$primary-color:#5E2C8B;
+$secondary-color:#73D0F9;
+$black: #000000;
+$white: #ffffff;
+
+
 .imgPlaceholder {
     background-color: yellow;
     height: 600px;
 }
 
 .intro {
-    background-color:#73D0F9;
+    background-color: $secondary-color;
     height: inherit;
     padding: 40px 50px;
     
@@ -17,20 +27,20 @@
     
     h1 {
         text-align: center;
-        color: #ffffff;
+        color: $white;
         font-size: 18px;
-        font-family: "Roboto";
+        font-family: $font-stack;
         text-transform: uppercase;
         margin-bottom:10px;
     }
     hr {
-        background-color: #5E2C8B;
+        background-color: $primary-color;
         height:4px;
         width: 94px;
         margin: auto;
     }
     p {
-        font-family: "Roboto";
+        font-family: $font-stack;
         font-size: 18px;
         text-align: left;
         line-height: 28px;
@@ -50,15 +60,15 @@
 
     h1 {
         text-align: center;
-        color: #000000;
+        color: $black;
         font-size: 18px;
-        font-family: "Roboto";
+        font-family: $font-stack;
         text-transform: uppercase;
         margin-bottom: 10px;
     }
 
     hr {
-        background-color: #73D0F9;
+        background-color:$secondary-color;
         height: 4px;
         width: 94px;
         margin: auto;
@@ -81,14 +91,14 @@
 
     h1 {
         text-align: center;
-        color: #000000;
+        color: $black;
         font-size: 18px;
-        font-family: "Roboto";
+        font-family: $font-stack;
         text-transform: uppercase;
         margin-bottom: 10px;
     }
     hr {
-        background-color: #73D0F9;
+        background-color: $secondary-color;
         height: 4px;
         width: 94px;
         margin: auto;
@@ -102,15 +112,15 @@
 
     h1 {
         text-align: center;
-        color: #000000;
+        color: $black;
         font-size: 18px;
-        font-family: "Roboto";
+        font-family: $font-stack;
         text-transform: uppercase;
         margin-bottom: 10px;
     }
 
     hr {
-        background-color: #73D0F9;
+        background-color: $secondary-color;
         height: 4px;
         width: 94px;
         margin: auto;
@@ -119,7 +129,7 @@
 }
 
 footer {
-    background-color: #5E2C8B;
+    background-color: $primary-color;
     height: inherit;
     padding: 50px auto;
 
@@ -137,10 +147,10 @@ footer {
         }
 
         h1 {
-            color: #ffffff;
+            color: $white;
             font-size: 30px;
             font-weight: 400;
-            font-family: "Roboto";
+            font-family: $font-stack;
             text-align: left;
 
             @media only screen and (min-width: 1024px) {
@@ -148,9 +158,9 @@ footer {
             }
         }
         p {
-            font-family: "Roboto";
+            font-family: $font-stack;
             font-size: 18px;
-            color: #ffffff;
+            color: $white;
             text-align: left;
         }
 
@@ -166,21 +176,32 @@ footer {
                 text-align: left;
 
                 div {
-                    margin: auto 10px auto 0;
-                    background-color: white;
+                    background-color: $white;
                     border-radius:50px;
                     width:40px;
                     height:40px;
                     padding:10px;
+                    margin: auto 15px auto 0;
+                    text-align:center;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.9);
+                    }
 
                     a {
                         text-decoration: none;
+                        color: $black;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
                     }
                 }
             }
         }
         .contact {
             margin-bottom: 36px;
+
             @media only screen and (min-width: 1024px) {
                 margin-bottom: 0;
             }
