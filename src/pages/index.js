@@ -48,9 +48,9 @@ const IndexPage = () => (
           <div className = "social">
             <h1>Social</h1>
             <div class ="icons">
-              <div><FaGithub/></div>
-              <div><FaCodepen/></div>
-              <div><FaLinkedinIn/></div>
+              <div><a href= "https://github.com/amspears" target = "blank"><FaGithub/></a></div>
+              <div><a href= "https://codepen.io/AMSpears/" target = "blank"><FaCodepen/></a></div>
+              <div><a href= "https://www.linkedin.com/in/angiespears/" target = "blank"><FaLinkedinIn/></a></div>
             </div>
           </div>
 
