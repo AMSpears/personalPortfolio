@@ -2,14 +2,21 @@
 nav {
      ul {
           display: flex;
-          justify-content: space-between;
+          flex-direction: column;
           list-style: none;
           white-space: nowrap;
-          overflow: auto;
+          overflow: hidden;
           font-family: "Roboto";
-          padding: 40px 20px;
+          padding: 24px 27px;
+          margin:0;
          
-          @media only screen and (min-width: 1024px) { 
+          @media only screen and (min-width: 768px) {
+               flex-direction: row;
+               justify-content: space-between;
+               padding: 30px 20px;
+          }
+
+          @media only screen and (min-width: 1024px) {
                padding: 30px 100px;
           }
 
@@ -23,8 +30,13 @@ nav {
 
           #logo {
                color: #5E2C8B;
-               font-size: 40px;
+               font-size: 24px;
                font-weight: 500;
+
+               @media only screen and (min-width: 768px) {
+                    font-size: 40px;
+
+               }
           }
 
           .linksContainer {
@@ -33,9 +45,13 @@ nav {
                .links {
                     color: black;
                     text-transform: uppercase;
-                    margin: 20px;
-                    font-size: 16px;
+                    margin: auto 40px auto 0;
+                    font-size: 14px;
                     font-weight: 500;
+
+                    @media only screen and (min-width: 1024px) {
+                         font-size: 16px;
+                    }
                }
 
                #resume {
