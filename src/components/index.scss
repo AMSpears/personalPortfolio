@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-// font stack 
-$font-stack: "Roboto";
-
-// color pallete 
-$primary-color:#5E2C8B;
-$secondary-color:#73D0F9;
-$black: #000000;
-$white: #ffffff;
-
+@import 'fontGuide';
 
 .imgPlaceholder {
     background-color: yellow;
@@ -135,6 +125,7 @@ $white: #ffffff;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: flex-end;
         margin: 70px auto;
         
         @media only screen and (min-width: 768px) {
@@ -146,17 +137,42 @@ $white: #ffffff;
             padding:10px;
             cursor: pointer;
             
-            &:hover {
-                border: 8px solid $secondary-color;
-                border-radius: 10px;
-                transition: .2s ease-in-out;
-            }
+           img {
+
+               &:hover {
+                    border: 8px solid $secondary-color;
+                    border-radius: 10px;
+                    transition: .2s ease-out;
+               }
 
 
+           } 
             @media only screen and (min-width: 768px) {
-                width:380px;
+                width: 380px;
                 margin: 0px auto 58px auto;
 
+            }
+
+            h2 {
+                font-family: $font-stack;
+                font-size:16px;
+                font-weight:400;
+                color: $black;
+
+                @media only screen and (min-width: 1024px) {
+                    font-size:40px;
+                }
+            }
+
+            p {
+                font-family: $font-stack;
+                font-size:11px;
+                font-weight: bold;
+                color: $secondary-color;
+
+                @media only screen and (min-width: 1024px) {
+                    font-size:18px;
+                } 
             }
         }
     }

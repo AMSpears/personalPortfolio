@@ -53,15 +53,51 @@ const IndexPage = () => (
         <h1>Projects</h1>
         <hr/>
         <div className = "projectsList">
-          <div className = "projectItems"><img src= {SFTProject} alt= "Solve For Tomorrow"/></div>
-          <div className = "projectItems"><img src= {FRSProject} alt= "First Responders"/></div> 
-          <div className = "projectItems"><img src= {AboveAllSecurity} alt= "Above All Security"/></div>
-          <div className = "projectItems"><img src= {ProvideServices} alt= "Provide Services"/></div>
-          <div className = "projectItems"><img src= {WeatherApp} alt= "My Weather App"/></div>
-          <div className = "projectItems"><img src= {FoodSearches} alt= "Food Searchers"/></div>
-          <div className = "projectItems"><img src= {TriviaGame} alt= "Trivia Game"/></div>
-          <div className = "projectItems"><img src= {ShoppingList} alt= "Shopping List"/></div>
-          <div className = "projectItems"><img src= {HomeFinder} alt= "Home Finder"/></div>
+          <div className = "projectItems">
+            <img src= {SFTProject} alt= "Solve For Tomorrow"/>
+            <p>Techonology, Technology</p>
+            <h2>Samsung:<br/> Solve For Tomorrow</h2>
+          </div>
+          <div className = "projectItems">
+            <img src= {FRSProject} alt= "First Responders"/>
+            <p>Techonology, Technology</p>
+            <h2>Verizon:<br/> First Responders</h2>
+          </div> 
+          <div className = "projectItems">
+            <img src= {AboveAllSecurity} alt= "Above All Security"/>
+            <p>Techonology, Technology</p>
+            <h2>Above All Security</h2>
+          </div>
+          <div className = "projectItems">
+          <img src= {ProvideServices} alt= "Provide Services"/>
+            <p>Techonology, Technology</p>
+            <h2>Provide Services</h2>
+          </div>
+          <div className = "projectItems">
+            <img src= {WeatherApp} alt= "My Weather App"/>
+            <p>Techonology, Technology</p>
+            <h2>My Weather</h2>
+          </div>
+          <div className = "projectItems">
+            <img src= {FoodSearches} alt= "Food Searchers"/>
+            <p>Techonology, Technology</p>
+            <h2>Food Searches</h2>
+          </div>
+          <div className = "projectItems">
+            <img src= {TriviaGame} alt= "Trivia Game"/>
+            <p>Techonology, Technology</p>
+            <h2>Trivia Game</h2>
+          </div>
+          <div className = "projectItems">
+            <img src= {ShoppingList} alt= "Shopping List"/>
+            <p>Techonology, Technology</p>
+            <h2>Shopping List</h2>
+          </div>
+          <div className = "projectItems">
+            <img src= {HomeFinder} alt= "Home Finder"/>
+            <p>Techonology, Technology</p>
+            <h2>Home Finder</h2>
+          </div>
         </div>
     </section>
     <footer>
