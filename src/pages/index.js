@@ -52,13 +52,14 @@ const IndexPage = () => (
               <div><FaCodepen/></div>
               <div><FaLinkedinIn/></div>
             </div>
-            </div>
+          </div>
+
           <div className = "contact">
             <h1>Contact</h1>
             <p>hello@angiespears.com</p>
             <p>571-659-8072</p>
-
           </div>
+
           <div className = "location">
               <h1>Proudly based in NYC.</h1>
           </div>
