@@ -2,8 +2,20 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Samsung from "../images/samsungLogo.png"
-import Verizon from "../images/verizonLogo.png"
+import Samsung from "../images/sg_logo.png"
+import Verizon from "../images/vzlogo_lg.png"
+import SFTProject from "../images/projects/SFT_Project.jpg"
+import FRSProject from "../images/projects/FRS_Project.jpg"
+import AboveAllSecurity from "../images/projects/above-all-security.jpg"
+import ProvideServices from "../images/projects/provide-services.jpg"
+import WeatherApp from "../images/projects/weather-app.jpg"
+import FoodSearches from "../images/projects/food-searches.jpg"
+import TriviaGame from "../images/projects/trivia-game.jpg"
+import ShoppingList from "../images/projects/shopping-list.jpg"
+import HomeFinder from "../images/projects/home-finder.jpg"
+
+
+
 import {
   FaGithub, FaCodepen, FaLinkedinIn
 } from 'react-icons/fa';
@@ -27,8 +39,8 @@ const IndexPage = () => (
         <h1>Brands I've worked with</h1>
         <hr/>
         <div className = "brandLogos">
-          <img src= {Samsung} alt= "samsung" style = {{width: `233px`, height:`93px`}}/>
-          <img src= {Verizon} alt= "verizon" style = {{width: `231px`, height:`72px`}} />
+          <img id ="samsung" src= {Samsung} alt= "samsung"/>
+          <img id = "verizon" src= {Verizon} alt= "verizon"/>
         </div>
     </section>
     <section className= 'technologies'> 
@@ -41,6 +53,15 @@ const IndexPage = () => (
         <h1>Projects</h1>
         <hr/>
         <div className = "projectsList">
+          <div className = "projectItems"><img src= {SFTProject} alt= "Solve For Tomorrow"/></div>
+          <div className = "projectItems"><img src= {FRSProject} alt= "First Responders"/></div> 
+          <div className = "projectItems"><img src= {AboveAllSecurity} alt= "Above All Security"/></div>
+          <div className = "projectItems"><img src= {ProvideServices} alt= "Provide Services"/></div>
+          <div className = "projectItems"><img src= {WeatherApp} alt= "My Weather App"/></div>
+          <div className = "projectItems"><img src= {FoodSearches} alt= "Food Searchers"/></div>
+          <div className = "projectItems"><img src= {TriviaGame} alt= "Trivia Game"/></div>
+          <div className = "projectItems"><img src= {ShoppingList} alt= "Shopping List"/></div>
+          <div className = "projectItems"><img src= {HomeFinder} alt= "Home Finder"/></div>
         </div>
     </section>
     <footer>

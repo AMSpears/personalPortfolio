@@ -46,11 +46,11 @@ $white: #ffffff;
         line-height: 28px;
         margin: 24px auto;
 
-           @media only screen and (min-width: 1024px) {
-                font-size: 40px;
-                line-height:48px;
-                margin: 44px auto;
-           }
+        @media only screen and (min-width: 1024px) {
+            font-size: 40px;
+            line-height:48px;
+            margin: 44px auto;
+        }
     }
 }
 
@@ -71,16 +71,21 @@ $white: #ffffff;
         background-color:$secondary-color;
         height: 4px;
         width: 94px;
-        margin: auto;
+        margin: 10px auto;
     }
      .brandLogos {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
+
         
-        @media only screen and (min-width: 768px) {
-            flex-direction: row; 
+        #samsung {
+            width:200px;
+            height: 100px;
+        }
+
+        #verizon {
+            width: 200px;
+            height: 100px;
         }
     }
  }
@@ -125,6 +130,37 @@ $white: #ffffff;
         width: 94px;
         margin: auto;
     }
+
+    .projectsList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 70px auto;
+        
+        @media only screen and (min-width: 768px) {
+            margin: 100px auto;
+        }
+        .projectItems {
+            width:132px;
+            margin: 0px auto 24px auto;
+            padding:10px;
+            cursor: pointer;
+            
+            &:hover {
+                border: 8px solid $secondary-color;
+                border-radius: 10px;
+                transition: .2s ease-in-out;
+            }
+
+
+            @media only screen and (min-width: 768px) {
+                width:380px;
+                margin: 0px auto 58px auto;
+
+            }
+        }
+    }
+
 
 }
 
