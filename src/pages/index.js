@@ -7,6 +7,14 @@ import headerImage from "../images/home_header.png"
 // brands
 import Samsung from "../images/logos/samsung.png"
 import Verizon from "../images/logos/verizon.png"
+// logos 
+import Api from "../images/logos/apiLogo.png"
+import HtmlCss from "../images/logos/logo_html-css.png"
+import Reactjs from "../images/logos/logo_react.png"
+import Express from "../images/logos/express-js.png"
+import Ruby from "../images/logos/logo_ruby.png"
+import Sass from "../images/logos/logo_sass.png"
+import Node from "../images/logos/node-logo.png"
 //projects
 import SFTProject from "../images/projects/SFT_Project.png"
 import FRSProject from "../images/projects/FRS_Project.png"
@@ -46,10 +54,14 @@ const IndexPage = () => (
     <section className= 'technologies'> 
         <h1>Technologies</h1>
         <hr/>
-         <div>
-          <div></div>
-        </div>
         <div className = "techList">
+          <div><img src= {HtmlCss} alt= "HTML5 | CSS3"/></div>
+           <div><img src= {Sass} alt= "Sass"/></div>
+          <div><img src= {Reactjs} alt= "ReactJS"/></div> 
+          <div><img src= {Node} alt= "NodeJS"/></div>
+          <div><img src= {Express} alt= "ExpressJS"/></div> 
+          <div><img src= {Api} alt= "RestFulAPIs"/></div>
+          <div><img src= {Ruby} alt= "Ruby"/></div>
         </div>
     </section>
     <section className= 'projects'> 
@@ -72,7 +84,7 @@ const IndexPage = () => (
             <h2>Above All Security</h2>
           </div>
           <div className = "projectItems">
-          <img src= "#" alt= "Provide Services"/>
+          <img src= {AboveAllSecurity} alt= "Provide Services"/>
             <p>HTML5, CSS3, React.js, Node.js </p>
             <h2>Provide Services</h2>
           </div>
