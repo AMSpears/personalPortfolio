@@ -2,6 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+//header 
+import headerImage from "../images/home_header.png"
 // brands
 import Samsung from "../images/logos/samsung.png"
 import Verizon from "../images/logos/verizon.png"
@@ -23,15 +25,15 @@ import "../components/index.scss"
 const IndexPage = () => (
   <Layout>
     <SEO title="Angie Spears" keywords={[`gatsby`, `application`, `react`, `front-end software Engineer`, `software Engineer`, `nyc`]} />
-    <a id="home">
-      <section className = "imgPlaceholder"></section>
-    </a>
+    <section className = "imgPlaceholder">
+      <img id= "headerImg" src= {headerImage} alt= "header"/>
+    </section>
     <a id="aboutMe">
-      <section className = 'intro'> 
+    <section className = 'intro'> 
         <h1>About Me</h1>
         <hr/>
         <p>Hi, I'm <strong>Angie Spears</strong>, a <strong>Front End Software Engineer</strong>. I am an ambitious, self-motivated and solutions-driven individual. I recognize needs, perfect the details and use strategic thinking to achieve goals</p>
-      </section>
+    </section>
     </a>
     <section className= 'brands'> 
         <h1>Brands I've worked with</h1>

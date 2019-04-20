@@ -1,18 +1,22 @@
 @import 'fontGuide';
 
 .imgPlaceholder {
-    background-color: yellow;
-    height: 600px;
+    img {
+        display:block;
+        width: 100%;
+        height: auto;
+        margin:0;
+    }  
 }
 
 .intro {
+    margin: 0;
     background-color: $secondary-color;
     height: inherit;
     padding: 40px 50px;
     
     @media only screen and (min-width: 1024px) {
         padding: 40px 100px;
-
     }
     
     h1 {
