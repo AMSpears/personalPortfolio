@@ -1,0 +1,19 @@
+@import 'fontGuide';
+
+
+.messageContainer {
+    background-color: $secondary-color;
+    width: 80%;
+    height: inherit;
+    border-radius:20px;
+    text-align: center;
+    margin: 100px auto;
+    padding: 20px;
+
+  
+    h1 {
+        font-family: $font-stack;
+        font-weight: 500;
+        font-size: 50px;
+    }
+}
