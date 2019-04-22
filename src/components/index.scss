@@ -71,6 +71,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        margin-top:40px;
 
         div:first-of-type {
             margin:0px 30px 0px 0px;
@@ -130,7 +131,67 @@
 
         div {
             margin: 0 20px;
-            width:70px;
+        }
+
+        #htmlCss {
+            width:113px;
+            height:87px;
+        }
+
+        #api {
+            width: 92px;
+            height: 82px;
+        }
+
+        #sass {
+            width: 59px;
+            height: 44px;
+            
+            @media only screen and (min-width: 768px) {
+                width: 80px;
+                height: 60px;
+            }
+
+        }
+
+        #express {
+            width:124px;
+            height:28px;
+            
+            @media only screen and (min-width: 768px) {
+                width:169px;
+                height:38px; 
+            }
+        }
+
+        #reactjs {
+            width: 80px;
+            height: 56px;
+
+            @media only screen and (min-width: 768px) {
+                width: 103px;
+                height:73px;
+            }
+        }
+
+        #ruby {
+            width:47px;
+            height:47px;
+
+            @media only screen and (min-width: 768px) {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        #node {
+            width:76px;
+            height:47px;
+
+            @media only screen and (min-width: 768px) {
+                width: 98px;
+                height: 60px;
+            }
         }
     }
 

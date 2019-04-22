@@ -55,13 +55,14 @@ const IndexPage = () => (
         <h1>Technologies</h1>
         <hr/>
         <div className = "techList">
-          <div><img src= {HtmlCss} alt= "HTML5 | CSS3"/></div>
-           <div><img src= {Sass} alt= "Sass"/></div>
-          <div><img src= {Reactjs} alt= "ReactJS"/></div> 
-          <div><img src= {Node} alt= "NodeJS"/></div>
-          <div><img src= {Express} alt= "ExpressJS"/></div> 
-          <div><img src= {Api} alt= "RestFulAPIs"/></div>
-          <div><img src= {Ruby} alt= "Ruby"/></div>
+          <div><img id = "api" src= {Api} alt= "RestFulAPIs"/></div>
+          <div><img id = "reactjs" src= {Reactjs} alt= "ReactJS"/></div> 
+          <div><img id = "node" src= {Node} alt= "NodeJS"/></div>
+          <div><img id = "express" src= {Express} alt= "ExpressJS"/></div> 
+          <div><img id = "htmlCss" src= {HtmlCss} alt= "HTML5 | CSS3"/></div>
+          <div><img id = "sass" src= {Sass} alt= "Sass"/></div>
+          <div><img id = "ruby" src= {Ruby} alt= "Ruby"/></div>
+
         </div>
     </section>
     <section className= 'projects'> 
