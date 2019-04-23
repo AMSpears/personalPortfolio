@@ -230,14 +230,14 @@
 
         .projectItems {
             width:132px;
-            margin: 0px auto 24px auto;
+            // margin: 0px auto 24px auto;
             padding:10px;
             cursor: pointer;
             
            img {
                 border: 2px solid $primary-color;
                 width: 132px;
-                height:134px;
+                height:132px;
 
                 @media only screen and (min-width: 768px) {
                     width: 380px;
