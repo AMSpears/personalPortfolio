@@ -8,6 +8,8 @@ import headerImage from "../images/home_header.png"
 import Samsung from "../images/logos/samsung.png"
 import Verizon from "../images/logos/verizon.png"
 // logos 
+import JavaScript from "../images/logos/javascript.png"
+import MongoDB from "../images/logos/mongodb.png"
 import Api from "../images/logos/apiLogo.png"
 import HtmlCss from "../images/logos/logo_html-css.png"
 import Reactjs from "../images/logos/logo_react.png"
@@ -19,7 +21,7 @@ import Node from "../images/logos/node-logo.png"
 import SFTProject from "../images/projects/SFT_Project.png"
 import FRSProject from "../images/projects/FRS_Project.png"
 import AboveAllSecurity from "../images/projects/above-all-security.png"
-// import ProvideServices from "../images/projects/provide-services.png"
+import ProvideServices from "../images/projects/provide-services.png"
 import WeatherApp from "../images/projects/weather-app.png"
 import FoodSearches from "../images/projects/food-searches.png"
 import TriviaGame from "../images/projects/trivia-game.png"
@@ -55,10 +57,12 @@ const IndexPage = () => (
         <h1>Technologies</h1>
         <hr/>
         <div className = "techList">
+          <div><img id="js" src={JavaScript} alt="Javascript" /></div>
           <div><img id = "api" src= {Api} alt= "RestFulAPIs"/></div>
           <div><img id = "reactjs" src= {Reactjs} alt= "ReactJS"/></div> 
           <div><img id = "node" src= {Node} alt= "NodeJS"/></div>
           <div><img id = "express" src= {Express} alt= "ExpressJS"/></div> 
+          <div><img id="mongodb" src={MongoDB} alt="MongoDB" /></div>
           <div><img id = "htmlCss" src= {HtmlCss} alt= "HTML5 | CSS3"/></div>
           <div><img id = "sass" src= {Sass} alt= "Sass"/></div>
           <div><img id = "ruby" src= {Ruby} alt= "Ruby"/></div>
@@ -85,7 +89,7 @@ const IndexPage = () => (
             <h2>Above All Security</h2>
           </div>
           <div className = "projectItems">
-          <img src= {AboveAllSecurity} alt= "Provide Services"/>
+          <img src= {ProvideServices} alt= "Provide Services"/>
             <p>HTML5, CSS3, React.js, Node.js </p>
             <h2>Provide Services</h2>
           </div>
