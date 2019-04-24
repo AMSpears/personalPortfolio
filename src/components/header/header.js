@@ -11,12 +11,13 @@ import "./header.scss"
 // function to access links in mobile version
 const UpdateHeader = () => {
   let menuItems = document.querySelectorAll('.linksContainer')
-  
+
   if (window.innerWidth <= 600) {
     for (let i = 0; i < menuItems.length; i++) {
-      menuItems[i].classList.toggle("active") 
-    }    
-  }
+      menuItems[i].classList.toggle("active");
+      menuItems[i].addEventListener('click', UpdateHeader, false);
+    }
+  } 
 }
     
 const Header = ({ siteTitle, home, aboutMe, resume }) => (
