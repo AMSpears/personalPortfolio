@@ -29,7 +29,9 @@ nav {
                     cursor: pointer;
                }
           }
-
+     .mobileNav{
+          display: flex;
+          justify-content: space-between;
           #logo {
                color: $primary-color;
                font-size: 24px;
@@ -40,9 +42,26 @@ nav {
 
                }
           }
+          #menuIcon {
+               
+               
+                    text-decoration: none;
+                    color: $black;
+                    font-size:25px;
+               
 
+               @media only screen and (min-width: 768px) {
+                    display:none;
+               }
+          }
+     }
           .linksContainer {
-               display: flex;
+               display: none;
+
+               @media only screen and (min-width: 768px) {
+                    display: flex;
+                    flex-direction: row;
+               }
 
                .links {
                     color: $black;
@@ -63,6 +82,12 @@ nav {
                     padding: 8px 24px;
                }
           }
+            .active {
+                 display: block;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+            }
      }
 }
 

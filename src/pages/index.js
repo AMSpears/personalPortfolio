@@ -124,7 +124,7 @@ const IndexPage = () => (
         <div className ="footerDetails">
           <div className = "social">
             <h1>Social</h1>
-            <div class ="icons">
+            <div className ="icons">
               <div><a href= "https://github.com/amspears" target = "blank"><FaGithub/></a></div>
               <div><a href= "https://codepen.io/AMSpears/" target = "blank"><FaCodepen/></a></div>
               <div><a href= "https://www.linkedin.com/in/angiespears/" target = "blank"><FaLinkedinIn/></a></div>

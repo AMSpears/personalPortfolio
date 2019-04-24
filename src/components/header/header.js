@@ -4,22 +4,43 @@ import { Link } from "gatsby"
 import "gatsby-plugin-sass"
 import Resume from "../resume/AngieSpears_Resume.pdf"
 
+import {
+  FaStream
+} from 'react-icons/fa';
+
+
 import "./header.scss"
 
+// function to access links in mobile version
+const UpdateHeader = () => {
+  let menuItems = document.querySelectorAll('.linksContainer')
+  
+  if (window.innerWidth <= 600) {
+    for (let i = 0; i < menuItems.length; i++) {
+       menuItems[i].classList.toggle("active")
+      console.log(menuItems)
+    }    
+  }
+}
+    
 const Header = ({ siteTitle, home, aboutMe, resume }) => (
   <header>
       <nav>
         <ul>
-          <li><Link to='/' id= 'logo'> {siteTitle}</Link></li>
+          <div className ="mobileNav">
+            <li><Link to='/' id= 'logo'> {siteTitle}</Link></li>
+            <button id = "menuIcon" onClick = {UpdateHeader}><FaStream/></button>
+          </div>
           <div className= 'linksContainer'>
             <li><Link to= '/' className= 'links'>{home}</Link></li>
-            <li><Link to= '#aboutMe' className= 'links'>{aboutMe}</Link></li>
+            <li><a href= '#aboutMe' className= 'links'>{aboutMe}</a></li>
             <li><a href= {Resume} target= "blank"  className= 'links' id= 'resume'>{resume}</a></li>
           </div>
         </ul>
       </nav>
   </header>
 )
+
 
 
 Header.propTypes = {
