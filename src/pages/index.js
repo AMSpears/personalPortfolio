@@ -38,13 +38,11 @@ const IndexPage = () => (
     <section className = "imgPlaceholder">
       <img id= "headerImg" src= {headerImage} alt= "header"/>
     </section>
-    <a name="aboutMe">
     <section className = 'intro'> 
         <h1>About Me</h1>
         <hr/>
         <p>Hi, I'm <strong>Angie Spears</strong>, a <strong>Front End Software Engineer</strong>. I am an ambitious, self-motivated and solutions-driven individual. I recognize needs, perfect the details and use strategic thinking to achieve goals</p>
     </section>
-    </a>
     <section className= 'brands'> 
         <h1>Brands I've worked with</h1>
         <hr/>

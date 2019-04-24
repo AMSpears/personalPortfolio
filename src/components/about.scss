@@ -1,0 +1,55 @@
+@import 'fontGuide';
+
+.imgPlaceholder {
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+.bio {
+    padding: 100px 120px;
+
+    .outerContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+         
+        div {
+            img {
+                width:600px;
+                height:600px;
+            }
+        }
+
+        div {
+            width:540px;
+            font-family: $font-stack;
+
+            h1 {
+               color: $black;
+               font-size: 40px;
+               line-height:48px;
+            }
+
+            p {
+                color: $black;
+                font-size:18px;
+                line-height:36px;
+            }
+
+             h2 {
+                font-size: 18px;
+                color: $secondary-color;
+                text-align: center;
+             }
+
+             p:last-of-type {
+                color: $secondary-color;
+                text-align: center;
+             }
+         }
+    }
+}

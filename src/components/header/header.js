@@ -29,7 +29,7 @@ const Header = ({ siteTitle, home, aboutMe, resume }) => (
           </div>
           <div className= 'linksContainer'>
             <li><Link to= '/' className= 'links'>{home}</Link></li>
-            <li><a href= '#aboutMe' className= 'links'>{aboutMe}</a></li>
+            <li><Link to= '/about-me' className= 'links'>{aboutMe}</Link></li>
             <li><a href= {Resume} target= "blank"  className= 'links' id= 'resume'>{resume}</a></li>
           </div>
         </ul>
