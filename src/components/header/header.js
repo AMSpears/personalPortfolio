@@ -29,7 +29,7 @@ const Header = ({ siteTitle, home, aboutMe, resume }) => (
         <ul>
           <div className ="mobileNav">
             <li><Link to='/' id= 'logo'> {siteTitle}</Link></li>
-            <button id = "menuIcon" onClick = {UpdateHeader}><FaStream/></button>
+            <li><button id = "menuIcon" onClick = {UpdateHeader}><FaStream/></button></li>
           </div>
           <div className= 'linksContainer'>
             <li><Link to= '/' className= 'links'>{home}</Link></li>
