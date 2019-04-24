@@ -38,7 +38,7 @@ const IndexPage = () => (
     <section className = "imgPlaceholder">
       <img id= "headerImg" src= {headerImage} alt= "header"/>
     </section>
-    <a id="aboutMe">
+    <a name="aboutMe">
     <section className = 'intro'> 
         <h1>About Me</h1>
         <hr/>

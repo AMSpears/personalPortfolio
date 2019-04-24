@@ -4,10 +4,7 @@ import { Link } from "gatsby"
 import "gatsby-plugin-sass"
 import Resume from "../resume/AngieSpears_Resume.pdf"
 
-import {
-  FaStream
-} from 'react-icons/fa';
-
+import { FaStream } from 'react-icons/fa';
 
 import "./header.scss"
 
@@ -18,7 +15,6 @@ const UpdateHeader = () => {
   if (window.innerWidth <= 600) {
     for (let i = 0; i < menuItems.length; i++) {
        menuItems[i].classList.toggle("active")
-      console.log(menuItems)
     }    
   }
 }
