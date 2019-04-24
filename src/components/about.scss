@@ -1,43 +1,75 @@
 @import 'fontGuide';
 
+
 .imgPlaceholder {
     img {
         display: block;
-        width: 100%;
+        width: 100vw;
         height: auto;
         margin: 0;
+        padding:0;
     }
 }
 
 .bio {
-    padding: 100px 120px;
+    padding: 40px;
+
+    @media only screen and (min-width: 768px) {
+        padding: 60px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding: 100px 120px;
+    }
 
     .outerContainer {
         display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-         
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (min-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
         div {
             img {
-                width:600px;
-                height:600px;
+                width:295px;
+                height:295px;
+
+                @media only screen and (min-width: 768px) {
+                    width:540px;
+                    height:540px; 
+                }
             }
         }
 
         div {
-            width:540px;
+            width:296px;
+            height:inherit;
             font-family: $font-stack;
+            padding:10px;
+            
+            @media only screen and (min-width: 768px) {
+               width:540px;
+               height:inherit;
+                
+            }
 
             h1 {
                color: $black;
                font-size: 40px;
                line-height:48px;
+               text-align:left;
             }
 
             p {
                 color: $black;
                 font-size:18px;
                 line-height:36px;
+                text-align:left;
             }
 
              h2 {
