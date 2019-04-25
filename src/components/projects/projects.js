@@ -1,6 +1,5 @@
 import React from 'react'
-
-import "gatsby-plugin-sass"
+import 'gatsby-plugin-sass'
 
 //projects
 import SFTProject from '../../images/projects/SFT_Project.png'
@@ -12,7 +11,6 @@ import FoodSearches from '../../images/projects/food-searches.png'
 import TriviaGame from '../../images/projects/trivia-game.png'
 import ShoppingList from '../../images/projects/shopping-list.png'
 import HomeFinder from '../../images/projects/home-finder.png'
-
 
 import './projects.scss'
 
