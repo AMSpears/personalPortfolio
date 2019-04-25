@@ -55,6 +55,18 @@ nav {
                     display:none;
                }
           }
+          #menuExitIcon {
+                 text-decoration: none;
+                 color: $black;
+                 font-size:25px;
+                 position: relative;
+                 z-index: 8;
+                 display:none;
+
+                 @media only screen and (min-width: 768px) {
+                      display: none;
+                 }
+          }
      }
           .linksContainer {
                display: none;
