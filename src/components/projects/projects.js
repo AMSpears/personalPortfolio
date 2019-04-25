@@ -67,7 +67,6 @@ switch (path) {
 const Projects = () => (
       <section className= 'projects'> 
         <div className = 'projectsList'>
-        
             <div className = 'projectItems' id = 'sftSamsung'>
                 <Link to = '/sft-samsung' onLoad = {urlCheck}><img src= {SFTProject} alt= 'Solve For Tomorrow'/></Link> 
                 <p>HTML5, SASS, Javascript</p>
