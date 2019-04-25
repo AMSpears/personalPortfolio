@@ -1,117 +1,125 @@
 @import '../fontGuide';
 
-nav {
-     
-     ul {
-          display: flex;
-          flex-direction: column;
-          list-style: none;
-          white-space: nowrap;
-          overflow: hidden;
-          font-family: $font-stack;
-          padding: 24px 27px 13px 27px;
-          margin:0;
-         
-          @media only screen and (min-width: 768px) {
-               flex-direction: row;
+%mobile-menu-commons {
+     text-decoration: none;
+     color: $black;
+     font-size:30px;
+     position: relative;
+     z-index: 2;
+
+}
+header {
+     nav {  
+          ul {
+               display: flex;
+               flex-direction: column;
+               list-style: none;
+               white-space: nowrap;
+               overflow: hidden;
+               font-family: $font-stack;
+               padding: 24px 27px 13px 27px;
+               margin:0;
+          
+               @media only screen and (min-width: 768px) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 24px 20px 14px 20px;
+               }
+
+               @media only screen and (min-width: 1024px) {
+                    padding: 24px 100px 14px 100px;
+               }
+
+               li {  
+                    a {
+                         text-decoration: none;
+                         cursor: pointer;
+                    }
+               }
+
+          .mobileNav {
+               display: flex;
                justify-content: space-between;
-               padding: 24px 20px 14px 20px;
-          }
+               align-items: flex-end;
 
-          @media only screen and (min-width: 1024px) {
-               padding: 24px 100px 14px 100px;
-          }
+               #logo {
+                    color: $primary-color;
+                    font-size: 24px;
+                    font-weight: 500;
 
-          li {
-               
-               a {
-                    text-decoration: none;
-                    cursor: pointer;
+                    @media only screen and (min-width: 768px) {
+                         font-size: 40px;
+
+                    }
                }
-          }
 
-     .mobileNav{
-          display: flex;
-          justify-content: space-between;
+               #menuIcon {
+                    @extend %mobile-menu-commons;
 
-          #logo {
-               color: $primary-color;
-               font-size: 24px;
-               font-weight: 500;
-
-               @media only screen and (min-width: 768px) {
-                    font-size: 40px;
-
+                    @media only screen and (min-width: 768px) {
+                         display:none;
+                    }
                }
-          }
-          #menuIcon {
-               text-decoration: none;
-               color: $black;
-               font-size:25px;
-               position: relative;
-               z-index: 2;
 
-               @media only screen and (min-width: 768px) {
+               #menuExitIcon {
+                    @extend %mobile-menu-commons;
                     display:none;
+
+                    @media only screen and (min-width: 768px) {
+                         display: none;
+                    }
                }
           }
-          #menuExitIcon {
-                 text-decoration: none;
-                 color: $black;
-                 font-size:25px;
-                 position: relative;
-                 z-index: 8;
-                 display:none;
 
-                 @media only screen and (min-width: 768px) {
-                      display: none;
-                 }
-          }
-     }
           .linksContainer {
                display: none;
 
                @media only screen and (min-width: 768px) {
                     display: flex;
                     flex-direction: row;
+                    justify-content: space-between;
                }
 
                .links {
                     color: $black;
                     text-transform: uppercase;
-                    margin: auto 40px auto 0;
-                    font-size: 14px;
+                    margin: auto 0;
+                    font-size: 32px;
                     font-weight: 500;
-                    @media only screen and (min-width: 1024px) {
+
+                    @media only screen and (min-width:768px) {
                          font-size: 16px;
+                         margin: auto 20px;
                     }
                }
 
                #resume {
-                    background-color: $primary-color;
-                    border-radius: 18px;
-                    color: $white;
-                    padding: 8px 24px;
+                    @media only screen and (min-width:768px) {
+                         background-color: $primary-color;
+                         border-radius: 18px;
+                         color: $white;
+                         padding: 8px 24px;
+                    }
                }
           }
 
-          .active {
-               display: flex;
-               flex-direction: column;
-               align-items: center;
-               justify-content: center;
-               width: 100%;
-               height: 100%;
-               position: absolute;
-               right: 0;
-               top: 0;
-               background-color:$white;
-               line-height: 40px;
-               opacity:.9;
-               z-index:1;
+               .active {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    line-height:80px;
+                    right: 0;
+                    top: 0;
+                    background-color:$white;
+                    opacity:.9;
+                    z-index:1;
+               }
           }
      }
 }
-
 
  
