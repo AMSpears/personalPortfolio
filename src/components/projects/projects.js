@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import 'gatsby-plugin-sass'
 
 //projects
@@ -18,47 +19,47 @@ const Projects = () => (
       <section className= 'projects'> 
         <div className = 'projectsList'>
             <div className = 'projectItems'>
-                <img src= {SFTProject} alt= 'Solve For Tomorrow'/>
+                <Link to = "/sft-samsung"><img src= {SFTProject} alt= 'Solve For Tomorrow'/></Link>
                 <p>HTML5, SASS, Javascript</p>
                 <h2>Solve For Tomorrow</h2>
             </div>
             <div className = 'projectItems'>
-                <img src= {FRSProject} alt= 'First Responders'/>
+                <Link to = "/frs-verizon"><img src= {FRSProject} alt= 'First Responders'/></Link>
                 <p>HTML5, SASS, React.js</p>
                 <h2>First Responders</h2>
             </div> 
             <div className = 'projectItems'>
-                <img src= {AboveAllSecurity} alt= 'Above All Security'/>
+                <Link to = "/above-all-security"><img src= {AboveAllSecurity} alt= 'Above All Security'/></Link>
                 <p>HTML5, CSS3, React.js, Node.js</p>
                 <h2>Above All Security</h2>
             </div>
             <div className = 'projectItems'>
-                <img src= {ProvideServices} alt= 'Provide Services'/>
+                <Link to = "/provide-services"><img src= {ProvideServices} alt= 'Provide Services'/></Link>
                 <p>HTML5, CSS3, React.js, Node.js </p>
                 <h2>Provide Services</h2>
             </div>
             <div className = 'projectItems'>
-                <img src= {WeatherApp} alt= 'My Weather App'/>
+                <Link to = "/my-weather"><img src= {WeatherApp} alt= 'My Weather App'/></Link>
                 <p>HTML5, CSS3, React.js </p>
                 <h2>My Weather</h2>
             </div>
             <div className = 'projectItems'>
-                <img src= {FoodSearches} alt= 'Food Searchers'/>
+                <Link to = "/food-searches"><img src= {FoodSearches} alt= 'Food Searchers'/></Link>
                 <p>HTML5, CSS3, React.js, Node.js</p>
                 <h2>Food Searches</h2>
             </div>
             <div className = 'projectItems'>
-                <img src= {TriviaGame} alt= 'Trivia Game'/>
+                <Link to = "/trivia-game"><img src= {TriviaGame} alt= 'Trivia Game'/></Link>
                 <p>THTML5, CSS3, and jQuery </p>
                 <h2>Trivia Game</h2>
             </div>
             <div className = 'projectItems'>
-                <img src= {ShoppingList} alt= 'Shopping List'/>
+                <Link to = "/shopping-list"><img src= {ShoppingList} alt= 'Shopping List'/></Link>
                 <p>HTML, CSS, Ruby on Rails</p>
                 <h2>Shopping List</h2>
             </div>
             <div className = 'projectItems'>
-                <img src= {HomeFinder} alt= 'Home Finder'/>
+                <Link to = "/home-finder"><img src= {HomeFinder} alt= 'Home Finder'/></Link>
                 <p>HTML5, CSS3, React.js, Node.js</p>
                 <h2>Home Finder</h2>
             </div>
