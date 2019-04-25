@@ -1,14 +1,17 @@
 @import 'fontGuide';
+@import 'index.scss';
 
+%mainHeaderCommons {
+    color: $black;
+    font-size: 40px;
+    line-height:48px;
+    text-align:left;
+    font-weight:400;
+}
 
-.imgPlaceholder {
-    img {
-        display: block;
-        width: 100vw;
-        height: auto;
-        margin: 0;
-        padding:0;
-    }
+%bodyCommons {
+    font-size:18px;
+    line-height:36px;
 }
 
 .bio {
@@ -32,6 +35,17 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
+        }
+
+        .mobileHeader {
+            @media only screen and (min-width: 1024px) {
+                display: none;
+            }
+
+            h1 {
+                @extend %mainHeaderCommons;
+                display:block;
+            }
         }
 
         div {
@@ -59,29 +73,30 @@
             }
 
             h1 {
-               color: $black;
-               font-size: 40px;
-               line-height:48px;
-               text-align:left;
+                @extend %mainHeaderCommons;
+                display:none;
+
+                @media only screen and (min-width: 1024px) {
+                   display:block;
+                }
             }
 
             p {
+                @extend %bodyCommons;
                 color: $black;
-                font-size:18px;
-                line-height:36px;
                 text-align:left;
             }
 
-             h2 {
+            h2 {
                 font-size: 18px;
                 color: $secondary-color;
                 text-align: center;
-             }
+            }
 
-             p:last-of-type {
+            p:last-of-type {
                 color: $secondary-color;
                 text-align: center;
-             }
-         }
+            }
+        }
     }
 }

@@ -16,6 +16,7 @@ const AboutPage = () => (
     </section>
     <section className = "bio">
       <div className = "outerContainer">
+        <div className="mobileHeader"><h1>Lorem ipsum dolor sit amet consectetur</h1></div>
         <div><img id= "bio" src={BioImg} alt= "bioImg"/></div>
         <div>
           <h1>Lorem ipsum dolor sit amet consectetur</h1>
