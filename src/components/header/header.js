@@ -42,7 +42,7 @@ const Header = ({ siteTitle, home, aboutMe, resume }) => (
             <li><Link to='/' id= 'logo'> {siteTitle}</Link></li>
            <div>
             <li><button id = "menuIcon" onClick = {UpdateHeader}><FaStream/></button></li>
-            <li><button id = "menuExitIcon">X</button></li>
+            <li><button id = "menuExitIcon" onClick = {UpdateHeader}>X</button></li>
             </div>
           </div>
           <div className= 'linksContainer'>
