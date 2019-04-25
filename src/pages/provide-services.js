@@ -32,7 +32,11 @@ const ProvdeServices = () => (
          <section className = 'projectImg'>
             <img src= {ProjectImgTwo} alt= 'Provide Services Overview'/>
         </section>
-        <Projects/>
+        <section className = "projects">
+            <h1>Other projects</h1>
+            <hr/>
+            <Projects/>
+        </section>
     </Layout>
 )
 

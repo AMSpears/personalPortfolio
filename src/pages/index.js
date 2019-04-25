@@ -34,7 +34,11 @@ const IndexPage = () => (
         </div>
     </section>
     <Technologies/>
-    <Projects/>
+    <section className = "projects">
+      <h1>Projects</h1>
+      <hr/>
+      <Projects/>
+    </section>
   </Layout>
 )
 

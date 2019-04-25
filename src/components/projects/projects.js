@@ -16,8 +16,6 @@ import './projects.scss'
 
 const Projects = () => (
       <section className= 'projects'> 
-        <h1>Projects</h1>
-        <hr/>
         <div className = 'projectsList'>
             <div className = 'projectItems'>
                 <img src= {SFTProject} alt= 'Solve For Tomorrow'/>
