@@ -36,12 +36,12 @@
         }
 
         .projectItems {
-            max-width: 134px;
+            width: 134px;
             cursor: pointer;
             padding: 0 31px 24px 0;
 
             @media only screen and (min-width: 1024px) {
-                max-width: 380px;
+                width: 380px;
                 padding: 0 58px 120px 0;
 
             }
