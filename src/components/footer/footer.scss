@@ -1,29 +1,36 @@
 @import '../fontGuide';
 
+%common-text {
+    color: $white;
+    font-family: $font-stack;
+    text-align: left;
+}
+
 footer {
     background-color: $primary-color;
     height: inherit;
-    padding: 50px auto;
+    padding: 30px 0;
+
+    @media only screen and (min-width: 1024px) {
+        padding: 48px 0;
+    }
 
     .footerDetails {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        padding: 40px;
-
+        padding: 0 40px;
 
         @media only screen and (min-width: 1024px) {
             flex-direction: row;
-            justify-content: space-between;
-            text-align: left;
+            align-items: flex-start;
+            justify-content: space-around;
+            padding:0;
         }
 
         h1 {
-            color: $white;
             font-size: 30px;
             font-weight: 400;
-            font-family: $font-stack;
-            text-align: left;
+            @extend %common-text;
 
             @media only screen and (min-width: 1024px) {
                 font-size: 40px;
@@ -31,12 +38,11 @@ footer {
         }
 
         p {
-            font-family: $font-stack;
             font-size: 18px;
-            color: $white;
-            text-align: left;
-        }
+            @extend %common-text;
 
+        }
+      
         .social {
             margin-bottom: 36px;
 
@@ -46,7 +52,6 @@ footer {
 
             .icons {
                 display: flex;
-                text-align: left;
 
                 div {
                     background-color: $white;
@@ -55,7 +60,6 @@ footer {
                     height: 40px;
                     padding: 10px;
                     margin: auto 15px auto 0;
-                    text-align: center;
 
                     &:hover {
                         background-color: rgba(255, 255, 255, 0.9);
