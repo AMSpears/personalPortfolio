@@ -79,17 +79,17 @@ const Projects = () => (
     <section className= 'projects'> 
         <div className = 'projectsList'>
             <div className = 'projectItems' id = 'sftSamsung'>
-                <Link to = '/sft-samsung' onLoad = {check}><Img fluid={data.sftSamsung.childImageSharp.fluid} fadeIn={false} alt= "Solve For Tomorrow "/></Link> 
+                <Link to = '/sft-samsung' onLoad = {check}><Img fluid={data.sftSamsung.childImageSharp.fluid} fadeIn={false} alt= 'Solve For Tomorrow'/></Link> 
                 <p>HTML5, SASS, Javascript</p>
                 <h2>Solve For Tomorrow</h2>
             </div>
             <div className = 'projectItems' id = 'frsVerizon'>
-                <Link to = '/frs-verizon' onLoad = {check}><Img fluid={data.frsVerizon.childImageSharp.fluid} fadeIn={false} alt= "First Responders"/></Link>
+                <Link to = '/frs-verizon' onLoad = {check}><Img fluid={data.frsVerizon.childImageSharp.fluid} fadeIn={false} alt= 'First Responders'/></Link>
                 <p>HTML5, SASS, React.js</p>
                 <h2>First Responders</h2>
             </div> 
             <div className = 'projectItems' id = 'aboveAllSecurity'>
-                <Link to = '/above-all-security' onLoad = {check}><Img fluid={data.AboveAllSecurity.childImageSharp.fluid} fadeIn={false}  alt= "Above All Security"/></Link>
+                <Link to = '/above-all-security' onLoad = {check}><Img fluid={data.AboveAllSecurity.childImageSharp.fluid} fadeIn={false}  alt= 'Above All Security'/></Link>
                 <p>HTML5, CSS3, React.js, Node.js</p>
                 <h2>Above All Security</h2>
             </div>
