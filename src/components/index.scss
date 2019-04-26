@@ -76,32 +76,9 @@
         align-items: flex-end;
         margin-top: 40px;
 
-        div:first-of-type {
-            margin: 0px 30px 0px 0px;
 
-            @media only screen and (min-width: 768px) {
-                margin: 0px 60px 0px 0px;
-            }
-        }
-
-        #samsung {
-            width: 131px;
-            height: 20px;
-
-            @media only screen and (min-width: 768px) {
-                width: 233px;
-                height: 35px;
-            }
-        }
-
-        #verizon {
-            width: 130px;
-            height: 31px;
-
-            @media only screen and (min-width: 768px) {
-                width: 231px;
-                height: 55px;
-            }
+        div {
+            margin: 0 10px 0 10px;
         }
     }
 }
