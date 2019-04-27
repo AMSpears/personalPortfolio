@@ -62,6 +62,13 @@ const Technologies= () => (
                 }
             }
         }
+        Ruby: file(relativePath: {eq: "logos/logo_ruby.png"}) {
+            childImageSharp {
+                fluid(maxWidth: 200 ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
     }
 `} render={(data) => (
       <section className= 'technologies'> 
@@ -74,6 +81,7 @@ const Technologies= () => (
             <div className= 'techItem'><Img fluid={data.Node.childImageSharp.fluid} fadeIn={false} alt= 'NodeJS'/></div>
             <div className= 'techItem'><Img fluid={data.Express.childImageSharp.fluid} fadeIn={false} alt= 'ExpressJS'/></div>
             <div className= 'techItem'><Img fluid={data.MongoDB.childImageSharp.fluid} fadeIn={false} alt= 'MongoDB'/></div>
+            <div className= 'techItem'><Img fluid={data.Ruby.childImageSharp.fluid} fadeIn={false} alt= 'Ruby'/></div>
             <div className= 'techItem'><Img fluid={data.HtmlCss.childImageSharp.fluid} fadeIn={false} alt= 'HtmlCss'/></div>
             <div className= 'techItem'><Img fluid={data.Sass.childImageSharp.fluid} fadeIn={false} alt= 'Sass'/></div>
         </div>
