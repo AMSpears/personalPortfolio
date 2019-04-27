@@ -12,21 +12,21 @@ import '../components/projectsPages/provideServices.scss'
 
 const ProvideServices = () => (
     <StaticQuery query = { graphql `{
-        HeaderImg: file(relativePath: {eq: "projects/provideServices/provideHeader.png"}) {
+        HeaderImg: file(relativePath: {eq: "projects/provideServices/provideHeader.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1600 ) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        ProjectImgOne: file(relativePath: {eq: "projects/provideServices/provideOne.png"}) {
+        ProjectImgOne: file(relativePath: {eq: "projects/provideServices/provideOne.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1600 ) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        ProjectImgTwo: file(relativePath: {eq: "projects/provideServices/provideTwo.png"}) {
+        ProjectImgTwo: file(relativePath: {eq: "projects/provideServices/provideTwo.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1600 ) {
                     ...GatsbyImageSharpFluid

@@ -13,7 +13,7 @@ import '../components/index.scss'
 
 const IndexPage = () => (
     <StaticQuery query = { graphql `{
-      HeaderImg: file(relativePath: {eq: "home_header.png"}) {
+      HeaderImg: file(relativePath: {eq: "home_header.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1600 ) {
                     ...GatsbyImageSharpFluid

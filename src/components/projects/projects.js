@@ -11,63 +11,63 @@ import check from './projectsFunc'
 
 const Projects = () => (
     <StaticQuery query = { graphql `{
-        sftSamsung: file(relativePath: {eq: "projects/SFT_Project.png"}) {
+        sftSamsung: file(relativePath: {eq: "projects/SFT_Project.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 380 ) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        frsVerizon: file(relativePath: {eq: "projects/FRS_Project.png"}) {
+        frsVerizon: file(relativePath: {eq: "projects/FRS_Project.jpg"}) {
             childImageSharp {
                 fluid( maxWidth: 380) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        AboveAllSecurity: file(relativePath: {eq: "projects/above-all-security.png"}) {
+        AboveAllSecurity: file(relativePath: {eq: "projects/above-all-security.jpg"}) {
             childImageSharp {
                 fluid( maxWidth: 380) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        ProvideServices: file(relativePath: {eq: "projects/provide-services.png"}) {
+        ProvideServices: file(relativePath: {eq: "projects/provide-services.jpg"}) {
             childImageSharp {
                 fluid( maxWidth: 380) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        WeatherApp: file(relativePath: {eq: "projects/weather-app.png"}) {
+        WeatherApp: file(relativePath: {eq: "projects/weather-app.jpg"}) {
             childImageSharp {
                 fluid( maxWidth: 380) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        FoodSearches: file(relativePath: {eq: "projects/food-searches.png"}) {
+        FoodSearches: file(relativePath: {eq: "projects/food-searches.jpg"}) {
             childImageSharp {
                 fluid( maxWidth: 380) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        TriviaGame: file(relativePath: {eq: "projects/trivia-game.png"}) {
+        TriviaGame: file(relativePath: {eq: "projects/trivia-game.jpg"}) {
             childImageSharp {
                 fluid( maxWidth: 380) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        ShoppingList: file(relativePath: {eq: "projects/shopping-list.png"}) {
+        ShoppingList: file(relativePath: {eq: "projects/shopping-list.jpg"}) {
             childImageSharp {
                 fluid( maxWidth: 380) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        HomeFinder: file(relativePath: {eq: "projects/home-finder.png"}) {
+        HomeFinder: file(relativePath: {eq: "projects/home-finder.jpg"}) {
             childImageSharp {
                 fluid( maxWidth: 380) {
                     ...GatsbyImageSharpFluid
