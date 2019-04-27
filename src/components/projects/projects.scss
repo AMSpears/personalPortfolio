@@ -17,8 +17,13 @@
     hr {
         background-color: $secondary-color;
         height: 4px;
-        width: 94px;
+        width: 28px;
         margin: auto;
+        
+        @media only screen and (min-width: 768px) {
+             width: 94px;
+        }
+
     }
 
     .projectsList {

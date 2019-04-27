@@ -31,8 +31,12 @@
     hr {
         background-color: $primary-color;
         height: 4px;
-        width: 94px;
+        width: 28px;
         margin: auto;
+        
+        @media only screen and (min-width: 768px) {
+             width: 94px;
+        }
     }
 
     p {
@@ -66,8 +70,12 @@
     hr {
         background-color: $secondary-color;
         height: 4px;
-        width: 94px;
+        width: 28px;
         margin: 10px auto;
+        
+        @media only screen and (min-width: 768px) {
+             width: 94px;
+        }
     }
 
     .brandLogos {
