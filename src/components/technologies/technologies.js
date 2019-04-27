@@ -15,56 +15,49 @@ const Technologies= () => (
         }
         MongoDB: file(relativePath: {eq: "logos/mongodb.png"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 200 ) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
         Api: file(relativePath: {eq: "logos/apiLogo.png"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 200 ) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
         HtmlCss: file(relativePath: {eq: "logos/logo_html-css.png"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 200 ) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
         Reactjs: file(relativePath: {eq: "logos/logo_react.png"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 200 ) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
         Express: file(relativePath: {eq: "logos/express-js.png"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        Ruby: file(relativePath: {eq: "logos/logo_ruby.png"}) {
-            childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 200 ) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
         Sass: file(relativePath: {eq: "logos/logo_sass.png"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 200 ) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
         Node: file(relativePath: {eq: "logos/node-logo.png"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 200 ) {
                     ...GatsbyImageSharpFluid
                 }
             }
@@ -83,7 +76,6 @@ const Technologies= () => (
             <div><Img fluid={data.MongoDB.childImageSharp.fluid} fadeIn={false} alt= 'MongoDB'/></div>
             <div><Img fluid={data.HtmlCss.childImageSharp.fluid} fadeIn={false} alt= 'HtmlCss'/></div>
             <div><Img fluid={data.Sass.childImageSharp.fluid} fadeIn={false} alt= 'Sass'/></div>
-            <div><Img fluid={data.Ruby.childImageSharp.fluid} fadeIn={false} alt= 'Ruby'/></div>
         </div>
     </section>
 )}/>)
