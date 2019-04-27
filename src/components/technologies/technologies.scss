@@ -2,6 +2,7 @@
 
 .technologies {
     height: inherit;
+    padding-top: 41px;
 
     h1 {
         text-align: center;
@@ -25,19 +26,23 @@
 
     .techList {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
-        margin: 28px 48px 0 48px;
+        margin: 36px 48px;
 
         @media only screen and (min-width: 1024px) {
-            margin: 56px 110px 0 110px;
-
+            margin: 56px 110px;
         }
-        div {
-           width: 70px;
-           margin:auto;
+
+        .techItem {
+            width: 80px;
+            margin: 10px;
+            
+            @media only screen and (min-width: 1024px) {
+                margin:20px;
+                width: 100px;
+            }
         }
     }
-
 }

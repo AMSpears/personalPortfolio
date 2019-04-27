@@ -8,7 +8,7 @@ const Technologies= () => (
     <StaticQuery query = { graphql `{
         JavaScript: file(relativePath: {eq: "logos/javascript.png"}) {
             childImageSharp {
-                fluid(maxWidth: 200 ) {
+                fluid(maxWidth: 200) {
                     ...GatsbyImageSharpFluid
                 }
             }
@@ -68,14 +68,14 @@ const Technologies= () => (
         <h1>Technologies</h1>
         <hr/>
         <div className = 'techList'>
-            <div><Img fluid={data.JavaScript.childImageSharp.fluid} fadeIn={false} alt= 'JavaScript'/></div>
-            <div><Img fluid={data.Api.childImageSharp.fluid} fadeIn={false} alt= 'RestFulAPIs'/></div>
-            <div><Img fluid={data.Reactjs.childImageSharp.fluid} fadeIn={false} alt= 'ReactJS'/></div>
-            <div><Img fluid={data.Node.childImageSharp.fluid} fadeIn={false} alt= 'NodeJS'/></div>
-            <div><Img fluid={data.Express.childImageSharp.fluid} fadeIn={false} alt= 'ExpressJS'/></div>
-            <div><Img fluid={data.MongoDB.childImageSharp.fluid} fadeIn={false} alt= 'MongoDB'/></div>
-            <div><Img fluid={data.HtmlCss.childImageSharp.fluid} fadeIn={false} alt= 'HtmlCss'/></div>
-            <div><Img fluid={data.Sass.childImageSharp.fluid} fadeIn={false} alt= 'Sass'/></div>
+            <div className= 'techItem'><Img fluid={data.JavaScript.childImageSharp.fluid} fadeIn={false} alt= 'JavaScript'/></div>
+            <div className= 'techItem'><Img fluid={data.Api.childImageSharp.fluid} fadeIn={false} alt= 'RestFulAPIs'/></div>
+            <div className= 'techItem'><Img fluid={data.Reactjs.childImageSharp.fluid} fadeIn={false} alt= 'ReactJS'/></div>
+            <div className= 'techItem'><Img fluid={data.Node.childImageSharp.fluid} fadeIn={false} alt= 'NodeJS'/></div>
+            <div className= 'techItem'><Img fluid={data.Express.childImageSharp.fluid} fadeIn={false} alt= 'ExpressJS'/></div>
+            <div className= 'techItem'><Img fluid={data.MongoDB.childImageSharp.fluid} fadeIn={false} alt= 'MongoDB'/></div>
+            <div className= 'techItem'><Img fluid={data.HtmlCss.childImageSharp.fluid} fadeIn={false} alt= 'HtmlCss'/></div>
+            <div className= 'techItem'><Img fluid={data.Sass.childImageSharp.fluid} fadeIn={false} alt= 'Sass'/></div>
         </div>
     </section>
 )}/>)
