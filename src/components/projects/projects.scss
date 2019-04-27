@@ -53,13 +53,19 @@
                 a {
                     text-decoration: none;
                     cursor: pointer;
+                    
+                    .imgContainer {
+                        border: 1px solid #d8d8d8;
+                        border-radius: 8px;
+                        
+                        img {
+                            border: 8px solid transparent;
+                            width: 100%;
+                            border-radius: 8px
+                        }
 
-            
-                    img {
-                        border: 8px solid transparent;
-                        width: 100%;
                     }
-
+                    
                     .overlay {
                         position: absolute;
                         top: 0;
@@ -67,6 +73,7 @@
                         height: 100%;
                         width: 100%;
                         border: 8px solid $secondary-color;
+                        border-radius:8px;
                         background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
                         opacity: 0;
                         transition: .3s ease-in-out;

@@ -81,7 +81,7 @@ const Projects = () => (
             <div className = 'projectItems' id = 'sftSamsung'>
                 <div className ="projectImgContainer">
                     <Link to = '/sft-samsung' onLoad = {check}>
-                        <Img fluid={data.sftSamsung.childImageSharp.fluid} fadeIn={false} alt= 'Solve For Tomorrow'/>
+                        <div className="imgContainer"><Img fluid={data.sftSamsung.childImageSharp.fluid} fadeIn={false} alt= 'Solve For Tomorrow'/></div>
                         <div className= "overlay">
                             <div className= "text">View</div>
                         </div>
@@ -93,7 +93,7 @@ const Projects = () => (
             <div className = 'projectItems' id = 'frsVerizon'>
                 <div className ="projectImgContainer">
                     <Link to = '/frs-verizon' onLoad = {check}>
-                        <Img fluid={data.frsVerizon.childImageSharp.fluid} fadeIn={false} alt= 'First Responders'/>
+                        <div className="imgContainer"><Img fluid={data.frsVerizon.childImageSharp.fluid} fadeIn={false} alt= 'First Responders'/></div>
                         <div className= "overlay">
                             <div className= "text">View</div>
                         </div>
@@ -105,7 +105,7 @@ const Projects = () => (
             <div className = 'projectItems' id = 'aboveAllSecurity'>
                 <div className ="projectImgContainer">
                     <Link to = '/above-all-security' onLoad = {check}>
-                        <Img fluid={data.AboveAllSecurity.childImageSharp.fluid} fadeIn={false}  alt= 'Above All Security'/>
+                        <div className="imgContainer"><Img fluid={data.AboveAllSecurity.childImageSharp.fluid} fadeIn={false}  alt= 'Above All Security'/></div>
                         <div className= "overlay">
                             <div className= "text">View</div>
                         </div>
@@ -117,7 +117,7 @@ const Projects = () => (
             <div className = 'projectItems' id = 'provideServices'>
                 <div className ="projectImgContainer">
                     <Link to = '/provide-services' onLoad = {check}>
-                        <Img fluid={data.ProvideServices.childImageSharp.fluid} fadeIn={false} alt= 'Provide Services'/>
+                        <div className="imgContainer"><Img fluid={data.ProvideServices.childImageSharp.fluid} fadeIn={false} alt= 'Provide Services'/></div>
                         <div className= "overlay">
                             <div className= "text">View</div>
                         </div>
@@ -129,7 +129,7 @@ const Projects = () => (
             <div className = 'projectItems' id = 'myWeather'>
                 <div className ="projectImgContainer">
                     <Link to = "/my-weather" onLoad = {check}>
-                    <Img fluid={data.WeatherApp.childImageSharp.fluid} fadeIn={false} alt= 'My Weather'/>
+                    <div className="imgContainer"><Img fluid={data.WeatherApp.childImageSharp.fluid} fadeIn={false} alt= 'My Weather'/></div>
                     <div className= "overlay">
                         <div className= "text">View</div>
                     </div>
@@ -141,7 +141,7 @@ const Projects = () => (
             <div className = 'projectItems' id ='foodSearches'>
                 <div className ="projectImgContainer">
                     <Link to = '/food-searches' onLoad = {check}>
-                        <Img fluid={data.FoodSearches.childImageSharp.fluid} fadeIn={false} alt= 'Food Searchers'/>
+                        <div className="imgContainer"><Img fluid={data.FoodSearches.childImageSharp.fluid} fadeIn={false} alt= 'Food Searchers'/></div>
                         <div className= "overlay">
                             <div className= "text">View</div>
                         </div>
@@ -153,7 +153,7 @@ const Projects = () => (
             <div className = 'projectItems' id = 'triviaGame'>
                 <div className ="projectImgContainer">
                     <Link to = '/trivia-game' onLoad = {check}>
-                        <Img fluid={data.TriviaGame.childImageSharp.fluid} fadeIn={false} alt= 'Trivia Game'/>
+                        <div className="imgContainer"><Img fluid={data.TriviaGame.childImageSharp.fluid} fadeIn={false} alt= 'Trivia Game'/></div>
                         <div className= "overlay">
                             <div className= "text">View</div>
                         </div>
@@ -165,7 +165,7 @@ const Projects = () => (
             <div className = 'projectItems' id = 'shoppingList'>
                 <div className ="projectImgContainer">
                     <Link to = '/shopping-list' onLoad = {check}>
-                        <Img fluid={data.ShoppingList.childImageSharp.fluid} fadeIn={false} alt= 'Shopping List'/>
+                        <div className="imgContainer"><Img fluid={data.ShoppingList.childImageSharp.fluid} fadeIn={false} alt= 'Shopping List'/></div>
                         <div className= "overlay">
                             <div className= "text">View</div>
                         </div>
@@ -177,7 +177,7 @@ const Projects = () => (
             <div className = 'projectItems' id = 'homeFinder'>
                 <div className ="projectImgContainer">
                     <Link to = '/home-finder' onLoad = {check}>
-                        <Img fluid={data.HomeFinder.childImageSharp.fluid} fadeIn={false} alt= 'Home Finder'/>
+                        <div className="imgContainer"> <Img fluid={data.HomeFinder.childImageSharp.fluid} fadeIn={false} alt= 'Home Finder'/></div>
                         <div className= "overlay">
                             <div className= "text">View</div>
                         </div>
