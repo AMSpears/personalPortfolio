@@ -79,47 +79,110 @@ const Projects = () => (
     <section className= 'projects'> 
         <div className = 'projectsList'>
             <div className = 'projectItems' id = 'sftSamsung'>
-                <Link to = '/sft-samsung' onLoad = {check}><Img fluid={data.sftSamsung.childImageSharp.fluid} fadeIn={false} alt= 'Solve For Tomorrow'/></Link> 
+                <div className ="projectImgContainer">
+                    <Link to = '/sft-samsung' onLoad = {check}>
+                        <Img fluid={data.sftSamsung.childImageSharp.fluid} fadeIn={false} alt= 'Solve For Tomorrow'/>
+                        <div className= "overlay">
+                            <div className= "text">View</div>
+                        </div>
+                    </Link> 
+                </div>
                 <p>HTML5, SASS, Javascript</p>
                 <h2>Solve For Tomorrow</h2>
             </div>
             <div className = 'projectItems' id = 'frsVerizon'>
-                <Link to = '/frs-verizon' onLoad = {check}><Img fluid={data.frsVerizon.childImageSharp.fluid} fadeIn={false} alt= 'First Responders'/></Link>
+                <div className ="projectImgContainer">
+                    <Link to = '/frs-verizon' onLoad = {check}>
+                        <Img fluid={data.frsVerizon.childImageSharp.fluid} fadeIn={false} alt= 'First Responders'/>
+                        <div className= "overlay">
+                            <div className= "text">View</div>
+                        </div>
+                    </Link>
+                </div>
                 <p>HTML5, SASS, React.js</p>
                 <h2>First Responders</h2>
             </div> 
             <div className = 'projectItems' id = 'aboveAllSecurity'>
-                <Link to = '/above-all-security' onLoad = {check}><Img fluid={data.AboveAllSecurity.childImageSharp.fluid} fadeIn={false}  alt= 'Above All Security'/></Link>
+                <div className ="projectImgContainer">
+                    <Link to = '/above-all-security' onLoad = {check}>
+                        <Img fluid={data.AboveAllSecurity.childImageSharp.fluid} fadeIn={false}  alt= 'Above All Security'/>
+                        <div className= "overlay">
+                            <div className= "text">View</div>
+                        </div>
+                    </Link>
+                </div>
                 <p>HTML5, CSS3, React.js, Node.js</p>
                 <h2>Above All Security</h2>
             </div>
             <div className = 'projectItems' id = 'provideServices'>
-                <Link to = '/provide-services' onLoad = {check}><Img fluid={data.ProvideServices.childImageSharp.fluid} fadeIn={false} alt= 'Provide Services'/></Link>
+                <div className ="projectImgContainer">
+                    <Link to = '/provide-services' onLoad = {check}>
+                        <Img fluid={data.ProvideServices.childImageSharp.fluid} fadeIn={false} alt= 'Provide Services'/>
+                        <div className= "overlay">
+                            <div className= "text">View</div>
+                        </div>
+                    </Link>
+                </div>
                 <p>HTML5, CSS3, React.js, Node.js </p>
                 <h2>Provide Services</h2>
             </div>
             <div className = 'projectItems' id = 'myWeather'>
-                <Link to = "/my-weather" onLoad = {check}><Img fluid={data.WeatherApp.childImageSharp.fluid} fadeIn={false} alt= 'My Weather'/></Link>
+                <div className ="projectImgContainer">
+                    <Link to = "/my-weather" onLoad = {check}>
+                    <Img fluid={data.WeatherApp.childImageSharp.fluid} fadeIn={false} alt= 'My Weather'/>
+                    <div className= "overlay">
+                        <div className= "text">View</div>
+                    </div>
+                </Link>
+                </div>
                 <p>HTML5, CSS3, React.js </p>
                 <h2>My Weather</h2>
             </div>
             <div className = 'projectItems' id ='foodSearches'>
-                <Link to = '/food-searches' onLoad = {check}><Img fluid={data.FoodSearches.childImageSharp.fluid} fadeIn={false} alt= 'Food Searchers'/></Link>
+                <div className ="projectImgContainer">
+                    <Link to = '/food-searches' onLoad = {check}>
+                        <Img fluid={data.FoodSearches.childImageSharp.fluid} fadeIn={false} alt= 'Food Searchers'/>
+                        <div className= "overlay">
+                            <div className= "text">View</div>
+                        </div>
+                    </Link>
+                </div>
                 <p>HTML5, CSS3, React.js, Node.js</p>
                 <h2>Food Searches</h2>
             </div>
             <div className = 'projectItems' id = 'triviaGame'>
-                <Link to = '/trivia-game' onLoad = {check}><Img fluid={data.TriviaGame.childImageSharp.fluid} fadeIn={false} alt= 'Trivia Game'/></Link>
+                <div className ="projectImgContainer">
+                    <Link to = '/trivia-game' onLoad = {check}>
+                        <Img fluid={data.TriviaGame.childImageSharp.fluid} fadeIn={false} alt= 'Trivia Game'/>
+                        <div className= "overlay">
+                            <div className= "text">View</div>
+                        </div>
+                    </Link>
+                </div>
                 <p>THTML5, CSS3, and jQuery </p>
                 <h2>Trivia Game</h2>
             </div>
             <div className = 'projectItems' id = 'shoppingList'>
-                <Link to = '/shopping-list' onLoad = {check}><Img fluid={data.ShoppingList.childImageSharp.fluid} fadeIn={false} alt= 'Shopping List'/></Link>
+                <div className ="projectImgContainer">
+                    <Link to = '/shopping-list' onLoad = {check}>
+                        <Img fluid={data.ShoppingList.childImageSharp.fluid} fadeIn={false} alt= 'Shopping List'/>
+                        <div className= "overlay">
+                            <div className= "text">View</div>
+                        </div>
+                    </Link>
+                </div>
                 <p>HTML, CSS, Ruby on Rails</p>
                 <h2>Shopping List</h2>
             </div>
             <div className = 'projectItems' id = 'homeFinder'>
-                <Link to = '/home-finder' onLoad = {check}><Img fluid={data.HomeFinder.childImageSharp.fluid} fadeIn={false} alt= 'Home Finder'/></Link>
+                <div className ="projectImgContainer">
+                    <Link to = '/home-finder' onLoad = {check}>
+                        <Img fluid={data.HomeFinder.childImageSharp.fluid} fadeIn={false} alt= 'Home Finder'/>
+                        <div className= "overlay">
+                            <div className= "text">View</div>
+                        </div>
+                    </Link>
+                </div>
                 <p>HTML5, CSS3, React.js, Node.js</p>
                 <h2>Home Finder</h2>
             </div>
