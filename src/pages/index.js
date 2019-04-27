@@ -22,15 +22,15 @@ const IndexPage = () => (
         }
       Samsung: file(relativePath: {eq: "logos/samsung.png"}) {
             childImageSharp {
-                fixed(width: 131) {
-                    ...GatsbyImageSharpFixed
+                fluid(maxWidth: 200) {
+                    ...GatsbyImageSharpFluid
                 }
             }
         }
       Verizon: file(relativePath: { eq: "logos/verizon.png"}) {
             childImageSharp {
-                fixed(width: 130) {
-                    ...GatsbyImageSharpFixed
+                fluid(maxWidth: 200) {
+                    ...GatsbyImageSharpFluid
                 }
             }
         }
@@ -49,9 +49,9 @@ const IndexPage = () => (
       <section className= 'brands'> 
           <h1>Brands I've worked with</h1>
           <hr/>
-          <div className = 'brandLogos'>
-            <div><Img fixed={data.Samsung.childImageSharp.fixed} fadeIn={false} alt= 'Samsung' /></div>
-            <div><Img fixed={data.Verizon.childImageSharp.fixed} fadeIn={false} alt= 'Verizon'/></div>
+          <div className = 'brandLogosContainer'>
+            <div className = "brandLogoItem"><Img fluid={data.Samsung.childImageSharp.fluid} fadeIn={false} alt= 'Samsung' /></div>
+            <div className = "brandLogoItem"><Img fluid={data.Verizon.childImageSharp.fluid} fadeIn={false} alt= 'Verizon'/></div>
           </div>
       </section>
       <Technologies/>

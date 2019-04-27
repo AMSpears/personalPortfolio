@@ -56,8 +56,11 @@
 
 .brands {
     height: inherit;
-    padding: 40px 50px;
+    padding: 28px 0;
 
+    @media only screen and (min-width: 1024px) {
+        padding: 41px 0;
+    }
     h1 {
         text-align: center;
         color: $black;
@@ -74,19 +77,23 @@
         margin: 10px auto;
         
         @media only screen and (min-width: 768px) {
-             width: 94px;
+            width: 94px;
         }
     }
 
-    .brandLogos {
+    .brandLogosContainer {
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        margin-top: 40px;
-
-
-        div {
-            margin: 0 10px 0 10px;
+        margin: 40px 40px;
+        
+       .brandLogoItem {
+            width: 200px;
+            margin:10px;
+            
+            @media only screen and (min-width: 768px) {
+                margin:20px;
+            }
         }
     }
 }
