@@ -14,6 +14,7 @@ import UpdateHeader from "./headerNavFunc"
 
 import './header.scss'
 
+
 const Header = ({ siteTitle, home, aboutMe, resume }) => (
   <header>
       <nav>
@@ -28,11 +29,7 @@ const Header = ({ siteTitle, home, aboutMe, resume }) => (
           <div className= 'linksContainer'>
             <li><Link to= '/' className= 'links'>{home}</Link></li>
             <li><Link to= '/about-me' className= 'links'>{aboutMe}</Link></li>
-            { window.innerWidth < 768 ? 
-              <li><a href= {Resume} target= 'blank'  className= 'links' id= 'resume'>{resume} <FiExternalLink/></a></li>
-            : 
-              <li><a href= {Resume} target= 'blank'  className= 'links' id= 'resume'>{resume}</a></li>
-            }
+            <li><a href= {Resume} target= 'blank'  className= 'links' id= 'resume'> {resume} <FiExternalLink id = "externalIcon" /> </a></li> 
           </div>
         </ul>
       </nav>
