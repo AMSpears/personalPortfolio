@@ -82,8 +82,13 @@
             }
 
             p:last-of-type {
-                color: $secondary-color;
                 text-align: center;
+                
+                .dot {
+                    font-size:2px;
+                    padding:2px 2px;
+                    color: $secondary-color;
+                }
             }
         }
     }

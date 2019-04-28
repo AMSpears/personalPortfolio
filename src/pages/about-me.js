@@ -4,6 +4,9 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import {
+  GoPrimitiveDot
+} from "react-icons/go";
 
 import '../components/about.scss'
 
@@ -33,17 +36,39 @@ const AboutPage = () => (
       <section className = 'bio'>
         <div className = 'outerContainer'>
           <div className= 'mobileHeader'>
-            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+            <h1>Hey there,</h1>
           </div>
           <div>
             <Img fluid={data.BioImg.childImageSharp.fluid} fadeIn={false} alt= 'Bio Img'/>
           </div>
           <div>
-            <h1>Lorem ipsum dolor sit amet consectetur</h1>
-            <p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <h1>Hey there,</h1>
+            <p>Thanks for stopping by !</p>
+            <p> My name is Angie Spears. I'm a Front End Software Engineer currently based in NYC.  I enjoy all things tech, chocolate, and coffee.  Bringing quality designs to life is what I'm here to do. I believe in strategizing, planning and executing, ( Yup! ) all in that order.  I'm a General Assembly grad with an undergrad in Business.  If I'm not building things, you will find me traveling or discovering new restaurants in the city.</p>
             <h2>Technologies</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>
+              JavaScript<GoPrimitiveDot className = "dot"/> 
+              ReactJs<GoPrimitiveDot className = "dot"/> 
+              PreactJs<GoPrimitiveDot className = "dot"/>  
+              GatsbyJs<GoPrimitiveDot className = "dot"/> 
+              NodeJs<GoPrimitiveDot className = "dot"/> 
+              MongoDB<GoPrimitiveDot className = "dot"/> 
+              PSQL / SQL<GoPrimitiveDot className = "dot"/>  
+              ExpressJs<GoPrimitiveDot className = "dot"/>  
+              PugJs<GoPrimitiveDot className = "dot"/>  
+              HTML5<GoPrimitiveDot className = "dot"/> 
+              CSS3<GoPrimitiveDot className = "dot"/> 
+              SASS<GoPrimitiveDot className = "dot"/> 
+              jQuery<GoPrimitiveDot className = "dot"/>  
+              JSON<GoPrimitiveDot className = "dot"/>  
+              Contentful<GoPrimitiveDot className = "dot"/>  
+              Media Queries<GoPrimitiveDot className = "dot"/>  
+              Git<GoPrimitiveDot className = "dot"/> 
+              GitHub<GoPrimitiveDot className = "dot"/> 
+              RESTful APIs<GoPrimitiveDot className = "dot"/> 
+              Ruby<GoPrimitiveDot className = "dot"/>  
+              Rails 
+            </p>
           </div>
         </div>
       </section>
