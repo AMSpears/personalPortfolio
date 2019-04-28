@@ -4,9 +4,7 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import {
-  GoPrimitiveDot
-} from "react-icons/go";
+import { GoPrimitiveDot } from "react-icons/go";
 
 import '../components/about.scss'
 
