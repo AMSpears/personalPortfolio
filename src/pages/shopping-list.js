@@ -24,6 +24,12 @@ const ShoppingList = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+        </section>
+        <section className = 'about'> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+        </section>
+        <section className = 'about'> 
             <div className = 'linksContainer'>
                 <div className= "links"> <a href= "https://as-shopping-list.herokuapp.com/users/sign_in" target= "blank">Website</a></div> 
                 <div className= "links"><a href= "https://github.com/AMSpears/shoppinglist" target= "blank">Github</a></div>

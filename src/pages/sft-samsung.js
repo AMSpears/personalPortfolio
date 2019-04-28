@@ -24,6 +24,12 @@ const SFTSamsung = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+        </section>
+        <section className = 'about'> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+        </section>
+        <section className = 'about'> 
             <div className = 'linksContainer'>
                 <div className= "links"> <a href= "https://www.samsung.com/us/solvefortomorrow/" target= "blank">Website</a></div> 
             </div>
