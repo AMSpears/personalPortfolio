@@ -19,7 +19,7 @@ const AboutPage = () => (
     }
     BioImg: file(relativePath: {eq: "web-half-width.png"}) {
       childImageSharp {
-        fluid(maxWidth: 1600) {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -36,10 +36,10 @@ const AboutPage = () => (
           <div className= 'mobileHeader'>
             <h1>Hey there,</h1>
           </div>
-          <div>
+          <div className = "imgContainer">
             <Img fluid={data.BioImg.childImageSharp.fluid} fadeIn={false} alt= 'Bio Img'/>
           </div>
-          <div>
+          <div className = "detailsContainer">
             <h1>Hey there,</h1>
             <p>Thanks for stopping by !</p>
             <p> My name is Angie Spears. I'm a Front End Software Engineer currently based in NYC.  I enjoy all things tech, chocolate, and coffee.  Bringing quality designs to life is what I'm here to do. I believe in strategizing, planning and executing, ( Yup! ) all in that order.  I'm a General Assembly grad with an undergrad in Business.  If I'm not building things, you will find me traveling or discovering new restaurants in the city.</p>
