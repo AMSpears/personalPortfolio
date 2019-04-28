@@ -41,16 +41,22 @@ const ProvideServices = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>This project for<strong> Provide Services </strong> was developed in collaboration with UX/UI designer <strong>Chaz Spears</strong>. The intent of this site is for this Cryptocurrency startup to communicate their services, allow customers to connect with them and utilize their services. </p>
         </section>
         <section className = 'projectImg'>
             <Img fluid={data.ProjectImgOne.childImageSharp.fluid} fadeIn={false} alt= 'Provide Services Overview'/>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>Some technologies used to develop this website are (client side) ReactJs, HTML5, CSS3, and (server side) NodeJs. The backend portion of the site enables the contact form to allow the company to received direct emails from customers.</p>
         </section>
          <section className = 'projectImg'>
             <Img fluid={data.ProjectImgTwo.childImageSharp.fluid} fadeIn={false} alt= 'Provide Services Overview'/>
+        </section>
+         <section className = 'about'> 
+            <div className = 'linksContainer'>
+                <div className= "links"> <a href= "https://provide.services/" target= "blank">Website</a></div> 
+                <div className= "links"><a href= "https://github.com/AMSpears/provide-services" target= "blank">Github</a></div>
+            </div>
         </section>
         <section className = "projects">
             <h1>Other projects</h1>
