@@ -23,6 +23,11 @@ const FRSVerizon = () => (
         <section className = 'imgPlaceholder'>
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
+        <section className = 'about'> 
+            <div className = 'linksContainer'>
+                <div className= "links"> <a href= "https://allourthanks.com/" target= "blank">Website</a></div> 
+            </div>
+        </section>
         <section className = "projects">
             <h1>Other projects</h1>
             <hr/>

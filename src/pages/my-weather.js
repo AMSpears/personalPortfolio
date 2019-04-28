@@ -23,6 +23,12 @@ const MyWeather = () => (
         <section className = 'imgPlaceholder'>
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
+        <section className = 'about'> 
+            <div className = 'linksContainer'>
+                <div className= "links"> <a href= "http://my-weather-personalized.surge.sh/" target= "blank">Website</a></div> 
+                <div className= "links"><a href= "https://github.com/AMSpears/weatherapp" target= "blank">Github</a></div>
+            </div>
+        </section>
         <section className = "projects">
             <h1>Other projects</h1>
             <hr/>

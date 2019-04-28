@@ -23,6 +23,12 @@ const TriviaGame = () => (
         <section className = 'imgPlaceholder'>
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
+        <section className = 'about'> 
+            <div className = 'linksContainer'>
+                <div className= "links"> <a href= "https://amspears.github.io/TriviaGame/" target= "blank">Website</a></div> 
+                <div className= "links"><a href= "https://github.com/AMSpears/TriviaGame/" target= "blank">Github</a></div>
+            </div>
+        </section>
         <section className = "projects">
             <h1>Other projects</h1>
             <hr/>

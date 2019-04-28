@@ -52,7 +52,7 @@ const ProvideServices = () => (
          <section className = 'projectImg'>
             <Img fluid={data.ProjectImgTwo.childImageSharp.fluid} fadeIn={false} alt= 'Provide Services Overview'/>
         </section>
-         <section className = 'about'> 
+        <section className = 'about'> 
             <div className = 'linksContainer'>
                 <div className= "links"> <a href= "https://provide.services/" target= "blank">Website</a></div> 
                 <div className= "links"><a href= "https://github.com/AMSpears/provide-services" target= "blank">Github</a></div>

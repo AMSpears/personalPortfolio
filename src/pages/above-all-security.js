@@ -24,11 +24,18 @@ const AboveAllSecurity = () => (
         <section className = 'imgPlaceholder'>
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
+        <section className = 'about'> 
+            <div className = 'linksContainer'>
+                <div className= "links"> <a href= "https://www.aboveall-security.com/" target= "blank">Website</a></div> 
+                <div className= "links"><a href= "https://github.com/AMSpears/above-all-security" target= "blank">Github</a></div>
+            </div>
+        </section>
         <section className = "projects">
             <h1>Other projects</h1>
             <hr/>
             <Projects/>
-            </section>
+        </section>
+
         </Layout>
     )}/>
 )
