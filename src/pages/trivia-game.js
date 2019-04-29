@@ -9,13 +9,21 @@ import Projects from "../components/projects/projects"
 
 const TriviaGame = () => (
     <StaticQuery query = { graphql `{
-        HeaderImg: file(relativePath: {eq: "web-full-width.png"}) {
+        HeaderImg: file(relativePath: {eq: "projects/triviaGame/state-capital-1.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1600 ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        } 
+        TriviaImg1: file(relativePath: {eq: "projects/triviaGame/state-capital-2.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1600 ) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
+
     }
 `} render={(data) => (
     <Layout>
@@ -27,6 +35,7 @@ const TriviaGame = () => (
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
         </section>
         <section className = 'projectImg'>
+            <Img fluid={data.TriviaImg1.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
