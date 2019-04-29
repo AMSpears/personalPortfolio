@@ -10,14 +10,7 @@ import '../components/about.scss'
 
 const AboutPage = () => (
   <StaticQuery query = { graphql `{
-    HeaderImg: file(relativePath: {eq: "web-full-width.png"}) {
-      childImageSharp {
-        fluid(maxWidth: 1600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    BioImg: file(relativePath: {eq: "web-half-width.png"}) {
+    BioImg: file(relativePath: {eq: "bioPic.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
@@ -28,9 +21,6 @@ const AboutPage = () => (
 `} render={(data) => (
     <Layout>
       <SEO title='About Me'/>
-      <section className = 'imgPlaceholder'>
-        <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
-      </section>
       <section className = 'bio'>
         <div className = 'outerContainer'>
           <div className= 'mobileHeader'>
