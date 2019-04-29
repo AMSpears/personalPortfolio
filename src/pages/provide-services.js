@@ -41,7 +41,7 @@ const ProvideServices = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>This project for<strong> Provide Services </strong> was developed in collaboration with UX/UI designer <strong>Chaz Spears</strong>. The intent of this site is for this Cryptocurrency startup to communicate their services, allow customers to connect with them and utilize their services. </p>
+            <p>This project for<strong> Provide Services </strong> was developed in collaboration with a UX/UI designer. The intent of this site is for this Cryptocurrency startup to communicate their services, allow customers to connect with them and utilize their services. </p>
         </section>
         <section className = 'projectImg'>
             <Img fluid={data.ProjectImgOne.childImageSharp.fluid} fadeIn={false} alt= 'Provide Services Overview'/>
