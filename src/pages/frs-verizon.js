@@ -9,7 +9,21 @@ import Projects from "../components/projects/projects"
 
 const FRSVerizon = () => (
     <StaticQuery query = { graphql `{
-        HeaderImg: file(relativePath: {eq: "web-full-width.png"}) {
+        HeaderImg: file(relativePath: {eq: "projects/frsVerizon/verizon-1.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1600 ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        VerizonImg2: file(relativePath: {eq: "projects/frsVerizon/verizon-2.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1600 ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        VerizonImg3: file(relativePath: {eq: "projects/frsVerizon/verizon-3.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1600 ) {
                     ...GatsbyImageSharpFluid
@@ -26,12 +40,14 @@ const FRSVerizon = () => (
         <section className = 'about'> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
         </section>
-        <section className = 'projectImg'>
+        <section className='projectImg'>
+            <Img fluid={data.VerizonImg2.childImageSharp.fluid} fadeIn={false} alt='header' />
         </section>
         <section className = 'about'> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
         </section>
         <section className = 'projectImg'>
+            <Img fluid={data.VerizonImg3.childImageSharp.fluid} fadeIn={false} alt='header' />
         </section>
         <section className = 'about'> 
             <div className = 'linksContainer'>
