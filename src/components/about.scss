@@ -4,32 +4,31 @@
 %mainHeaderCommons {
     color: $black;
     font-size: 40px;
-    line-height:48px;
-    text-align:left;
-    font-weight:400;
+    line-height: 48px;
+    text-align: left;
+    font-weight: 400;
 }
 
 %bodyCommons {
-    font-size:18px;
-    line-height:36px;
+    font-size: 18px;
+    line-height: 36px;
 }
 
 .bio {
-    padding: 40px;   
+    padding: 40px;
 
     @media only screen and (min-width: 768px) {
         padding: 60px;
     }
 
     @media only screen and (min-width: 1024px) {
-        padding: 100px 120px;            
+        padding: 100px 120px;
     }
 
     .outerContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin:auto;
 
         @media only screen and (min-width: 1024px) {
             flex-direction: row;
@@ -39,17 +38,18 @@
         .mobileHeader {
             h1 {
                 @extend %mainHeaderCommons;
-                display:block;
+                display: block;
 
                 @media only screen and (min-width: 1024px) {
                     display: none;
                 }
             }
         }
+
         .imgContainer {
             border: 1px solid #d8d8d8;
-            border-radius:8px;
-            height:100%;
+            border-radius: 8px;
+            height: 100%;
 
             @media only screen and (min-width: 1024px) {
                 width: 600px;
@@ -59,28 +59,29 @@
                 border: 8px solid transparent;
             }
         }
+
         .detailsContainer {
             font-family: $font-stack;
             padding: 40px 0 0 0;
 
             @media only screen and (min-width: 1024px) {
-               width: 540px;
-               padding: 0 0 0 60px;
+                width: 540px;
+                padding: 0 0 0 60px;
             }
 
             h1 {
                 @extend %mainHeaderCommons;
-                display:none;
+                display: none;
 
                 @media only screen and (min-width: 1024px) {
-                   display:block;
+                    display: block;
                 }
             }
 
             p {
                 @extend %bodyCommons;
                 color: $black;
-                text-align:left;
+                text-align: left;
             }
 
             h2 {
@@ -91,10 +92,10 @@
 
             p:last-of-type {
                 text-align: center;
-                
+
                 .dot {
-                    font-size:2px;
-                    padding:2px 2px;
+                    font-size: 2px;
+                    padding: 2px 2px;
                     color: $secondary-color;
                 }
             }
