@@ -24,12 +24,12 @@ const ShoppingList = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p><strong>Shopping List</strong> is one of the first projects I worked on while at General Assembly. For this project, I collaborated with a UX/UI designer to create a fun and interactive shopping list app where the user can create personalized shopping lists. </p>
         </section>
         <section className = 'projectImg'>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>Some technologies used for this project are Ruby, Rails, HTML5, and CSS3.</p>
         </section>
         <section className = 'projectImg'>
         </section>

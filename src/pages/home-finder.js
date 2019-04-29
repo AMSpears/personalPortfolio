@@ -24,12 +24,12 @@ const HomeFinder = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p><strong>Home Finder</strong> is a project I worked on while at General Assembly. For this project, I collaborated with other engineers to create a fun and interactive app where the user can search for and add listings. We developed this project with the intent of gaining a deeper understanding of building full stack applications. </p>
         </section>
         <section className = 'projectImg'>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>Some technologies used for this project are React.js, Node.js, Express.js, HTML5, and CSS3. </p>
         </section>
         <section className = 'projectImg'>
         </section>

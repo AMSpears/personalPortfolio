@@ -25,12 +25,12 @@ const FoodSearches = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p><strong> Food Search</strong> is a project I created while at General Assembly. For this project, I collaborated with a UX/UI designer to create a fun and interactive app where the user can search for restaurants based on the location or type of food they like similarly to yelp. </p>
         </section>
         <section className = 'projectImg'>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>Some technologies used to create this project are React.js, Node.js, Express.js, HTML5, and CSS3. The information for the restaurants was obtained using the Yelp API. </p>
         </section>
         <section className = 'projectImg'>
         </section>

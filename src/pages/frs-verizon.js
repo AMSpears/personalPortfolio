@@ -38,13 +38,13 @@ const FRSVerizon = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>While at R/GA, I worked on parts of this awesome project called <strong>First Responders</strong> for Verizon. This campaign allowed people to share their gratitude to First Responders during the super bowl. This project was developed in collaboration with other engineers, designers,  QA engineers, and other disciples. </p>
         </section>
         <section className='projectImg'>
             <Img fluid={data.VerizonImg2.childImageSharp.fluid} fadeIn={false} alt='header' />
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>Some technologies used to update this site were Javascript, React.js, HTML5, and SASS.</p>
         </section>
         <section className = 'projectImg'>
             <Img fluid={data.VerizonImg3.childImageSharp.fluid} fadeIn={false} alt='header' />

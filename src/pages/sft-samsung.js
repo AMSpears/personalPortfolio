@@ -31,12 +31,12 @@ const SFTSamsung = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>While at R/GA,  I worked on Samsung <strong>Solve For Tomorrow </strong>campaign. For each new phase of this campaign, I made updates in collaboration with other engineers, designers,  QA engineers, and other disciples. </p>
         </section>
         <section className = 'projectImg'>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>Some technologies used to update this site were Javascript, HTML5, and SASS. </p>
         </section>
         <section className = 'projectImg'>
             <Img fluid={data.SamsungImg1.childImageSharp.fluid} fadeIn={false} alt= 'header'/>

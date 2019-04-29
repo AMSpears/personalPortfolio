@@ -24,12 +24,12 @@ const MyWeather = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>My Weather is a personal project of mine that I designed and developed to recreate a personalized weather app that queries real-time weather information from the open weather map API.</p>
         </section>
         <section className = 'projectImg'>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>Some technologies used to create this project are React.js, HTML5, and CSS3.</p>
         </section>
         <section className = 'projectImg'>
         </section>

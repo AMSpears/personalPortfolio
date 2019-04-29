@@ -32,13 +32,13 @@ const TriviaGame = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>State Capitals is a trivia game I created while at  General Assembly. For this project,  I create a fun and interactive quiz that allows the user to test their knowledge of the state capitals within 60 seconds. </p>
         </section>
         <section className = 'projectImg'>
             <Img fluid={data.TriviaImg1.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>Some technologies used to create this project are JQuery, HTML5, and CSS3. </p>
         </section>
         <section className = 'projectImg'>
         </section>

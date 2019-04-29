@@ -25,12 +25,12 @@ const AboveAllSecurity = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p><strong>Above All Security</strong> is a small security firm based in Washington, DC.  I designed and developed this site for the client to communicate their services and allow their current and new clients to be able to connect with them.</p>
         </section>
         <section className = 'projectImg'>
         </section> 
         <section className = 'about'> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>Some technologies used to develop this website are (client side) ReactJs, HTML5, CSS3, and (server side) NodeJs.  The backend portion of the site enables the contact form to allow the company to received direct emails from customers.</p>
         </section>
         <section className = 'projectImg'>
         </section>
