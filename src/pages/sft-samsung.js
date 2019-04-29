@@ -9,7 +9,14 @@ import Projects from "../components/projects/projects"
 
 const SFTSamsung = () => (
     <StaticQuery query = { graphql `{
-        HeaderImg: file(relativePath: {eq: "web-full-width.png"}) {
+        HeaderImg: file(relativePath: {eq: "projects/sftSamsung/samsung-1.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1600 ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        SamsungImg1: file(relativePath: {eq: "projects/sftSamsung/samsung-2.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1600 ) {
                     ...GatsbyImageSharpFluid
@@ -32,6 +39,7 @@ const SFTSamsung = () => (
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
         </section>
         <section className = 'projectImg'>
+            <Img fluid={data.SamsungImg1.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
             <div className = 'linksContainer'>
