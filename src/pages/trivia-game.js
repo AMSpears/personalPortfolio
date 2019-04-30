@@ -40,8 +40,6 @@ const TriviaGame = () => (
         <section className = 'about'> 
             <p>Some technologies used to create this project are JQuery, HTML5, and CSS3. </p>
         </section>
-        <section className = 'projectImg'>
-        </section>
         <section className = 'about'> 
             <div className = 'linksContainer'>
                 <div className= "links"> <a href= "https://amspears.github.io/TriviaGame/" target= "blank">Website</a></div> 

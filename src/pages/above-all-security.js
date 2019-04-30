@@ -10,7 +10,14 @@ import Projects from "../components/projects/projects"
 
 const AboveAllSecurity = () => (
     <StaticQuery query = { graphql `{
-        HeaderImg: file(relativePath: {eq: "web-full-width.png"}) {
+        HeaderImg: file(relativePath: {eq: "projects/aboveAllSecurity/above-all-security1.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1600 ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        AboveAllSecurityImg: file(relativePath: {eq: "projects/aboveAllSecurity/above-all-security2.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1600 ) {
                     ...GatsbyImageSharpFluid
@@ -28,6 +35,7 @@ const AboveAllSecurity = () => (
             <p><strong>Above All Security</strong> is a small security firm based in Washington, DC.  I designed and developed this site for the client to communicate their services and allow their current and new clients to be able to connect with them.</p>
         </section>
         <section className = 'projectImg'>
+            <Img fluid={data.AboveAllSecurityImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section> 
         <section className = 'about'> 
             <p>Some technologies used to develop this website are (client side) ReactJs, HTML5, CSS3, and (server side) NodeJs.  The backend portion of the site enables the contact form to allow the company to received direct emails from customers.</p>

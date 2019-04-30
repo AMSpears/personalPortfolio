@@ -3,17 +3,28 @@
 
 .messageContainer {
     background-color: $secondary-color;
-    width: 80%;
+    width: 90%;
     height: inherit;
     border-radius:20px;
     text-align: center;
-    margin: 100px auto;
-    padding: 20px;
-
-  
+    margin: 100px auto ;
+    padding:40px;
+    
+    @media only screen and (min-width: 1024px) {
+        padding:100px;
+    }
+    
     h1 {
         font-family: $font-stack;
-        font-weight: 500;
-        font-size: 50px;
+        font-weight: 600;
+        font-size: 40px;
+        @media only screen and (min-width: 1024px) {
+            font-size: 100px;
+        }
+    }
+
+    p {
+        font-family: $font-stack;
+        font-size:25px;
     }
 }

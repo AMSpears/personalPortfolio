@@ -9,7 +9,14 @@ import Projects from "../components/projects/projects"
 
 const MyWeather = () => (
     <StaticQuery query = { graphql `{
-        HeaderImg: file(relativePath: {eq: "web-full-width.png"}) {
+        HeaderImg: file(relativePath: {eq: "projects/weatherApp/weather-app.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1600 ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        WeatherAppImg: file(relativePath: {eq: "projects/weatherApp/weather-app-2.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1600 ) {
                     ...GatsbyImageSharpFluid
@@ -26,12 +33,11 @@ const MyWeather = () => (
         <section className = 'about'> 
             <p>My Weather is a personal project of mine that I designed and developed to recreate a personalized weather app that queries real-time weather information from the open weather map API.</p>
         </section>
-        <section className = 'projectImg'>
+        <section className = 'projectImg'>            
+            <Img fluid={data.WeatherAppImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
             <p>Some technologies used to create this project are React.js, HTML5, and CSS3.</p>
-        </section>
-        <section className = 'projectImg'>
         </section>
         <section className = 'about'> 
             <div className = 'linksContainer'>
