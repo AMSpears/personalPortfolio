@@ -6,6 +6,8 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import Projects from "../components/projects/projects"
+import '../components/projectPages.scss'
+
 
 const FRSVerizon = () => (
     <StaticQuery query = { graphql `{
@@ -44,15 +46,13 @@ const FRSVerizon = () => (
             <Img fluid={data.VerizonImg2.childImageSharp.fluid} fadeIn={false} alt='header' />
         </section>
         <section className = 'about'> 
-            <p>Some technologies used to update this site were Javascript, React.js, HTML5, and SASS.</p>
+            <p>Some technologies used to create this site were React.js, HTML5, and SASS.</p>
         </section>
         <section className = 'projectImg'>
             <Img fluid={data.VerizonImg3.childImageSharp.fluid} fadeIn={false} alt='header' />
         </section>
-        <section className = 'about'> 
-            <div className = 'linksContainer'>
-                <div className= "links"> <a href= "https://allourthanks.com/" target= "blank">Website</a></div> 
-            </div>
+        <section className = 'linksContainer'> 
+            <div className= "links"> <a href= "https://allourthanks.com/" target= "blank">Website</a></div> 
         </section>
         <section className = "projects">
             <h1>Other projects</h1>

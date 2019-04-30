@@ -7,7 +7,7 @@ import SEO from '../components/seo'
 
 import Projects from "../components/projects/projects"
 
-import '../components/projectsPages/provideServices.scss'
+import '../components/projectPages.scss'
 
 
 const ProvideServices = () => (
@@ -52,11 +52,9 @@ const ProvideServices = () => (
          <section className = 'projectImg'>
             <Img fluid={data.ProjectImgTwo.childImageSharp.fluid} fadeIn={false} alt= 'Provide Services Overview'/>
         </section>
-        <section className = 'about'> 
-            <div className = 'linksContainer'>
-                <div className= "links"> <a href= "https://provide.services/" target= "blank">Website</a></div> 
-                <div className= "links"><a href= "https://github.com/AMSpears/provide-services" target= "blank">Github</a></div>
-            </div>
+        <section className = 'linksContainer'> 
+            <div className= "links"> <a href= "https://provide.services/" target= "blank">Website</a></div> 
+            <div className= "links"><a href= "https://github.com/AMSpears/provide-services" target= "blank">Github</a></div>
         </section>
         <section className = "projects">
             <h1>Other projects</h1>

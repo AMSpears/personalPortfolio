@@ -1,4 +1,4 @@
-@import '../fontGuide';
+@import 'fontGuide';
 
 %commons-text-mobile {
     font-family: $font-stack;
@@ -24,31 +24,35 @@
         }
         
     }
-
-    .linksContainer{
-        display: flex;
-
-        .links {
-            margin:20px;
-
-            a {
-                @extend %commons-text-mobile;
-                text-decoration: none;
-                cursor: pointer;
-
-                @media only screen and (min-width: 1024px) {
-                    font-size: 40px;
-
-                    &:hover {
-                        color: $secondary-color;
-
-                    }
-                } 
-            }
-        }
-    }
 }
 
+.linksContainer {
+    display: flex;
+    padding: 0 40px;
+
+    @media only screen and (min-width: 1024px) {
+        padding: 0 120px;
+    }
+
+     .links {
+        margin: 10px;
+
+         a {
+             @extend %commons-text-mobile;
+             text-decoration: none;
+             cursor: pointer;
+
+             @media only screen and (min-width: 1024px) {
+                 font-size: 40px;
+
+                 &:hover {
+                    color: $secondary-color;
+
+                 }
+             }
+         }
+     }
+ }
 .projectImg {
     padding: 0 40px;
     

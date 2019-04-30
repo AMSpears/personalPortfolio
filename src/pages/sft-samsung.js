@@ -6,6 +6,8 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import Projects from "../components/projects/projects"
+import '../components/projectPages.scss'
+
 
 const SFTSamsung = () => (
     <StaticQuery query = { graphql `{
@@ -31,7 +33,7 @@ const SFTSamsung = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>While at R/GA,  I worked on Samsung <strong>Solve For Tomorrow </strong>campaign. For each new phase of this campaign, I made updates in collaboration with other engineers, designers,  QA engineers, and other disciples. </p>
+            <p>While at R/GA,  I worked on the Samsung: <strong>Solve For Tomorrow </strong>campaign. For each new phase of this campaign, I made updates in collaboration with other engineers, designers,  QA engineers, and other disciples. </p>
         </section>
         <section className = 'projectImg'>
         </section>
@@ -41,10 +43,8 @@ const SFTSamsung = () => (
         <section className = 'projectImg'>
             <Img fluid={data.SamsungImg1.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
-        <section className = 'about'> 
-            <div className = 'linksContainer'>
-                <div className= "links"> <a href= "https://www.samsung.com/us/solvefortomorrow/" target= "blank">Website</a></div> 
-            </div>
+        <section className = 'linksContainer'> 
+            <div className= "links"> <a href= "https://www.samsung.com/us/solvefortomorrow/" target= "blank">Website</a></div> 
         </section>
         <section className = "projects">
             <h1>Other projects</h1>

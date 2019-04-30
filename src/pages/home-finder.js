@@ -6,6 +6,8 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import Projects from "../components/projects/projects"
+import '../components/projectPages.scss'
+
 
 const HomeFinder = () => (
     <StaticQuery query = { graphql `{
@@ -33,11 +35,9 @@ const HomeFinder = () => (
         </section>
         <section className = 'projectImg'>
         </section>
-        <section className = 'about'> 
-            <div className = 'linksContainer'>
-                <div className= "links"> <a href= "http://home-finder.surge.sh/homes" target= "blank">Website</a></div> 
-                <div className= "links"><a href= "https://github.com/AMSpears/home-app-frontend" target= "blank">Github</a></div>
-            </div>
+        <section className = 'linksContainer'> 
+            <div className= "links"> <a href= "http://home-finder.surge.sh/homes" target= "blank">Website</a></div> 
+            <div className= "links"><a href= "https://github.com/AMSpears/home-app-frontend" target= "blank">Github</a></div>
         </section>
         <section className = "projects">
             <h1>Other projects</h1>

@@ -31,7 +31,7 @@ const MyWeather = () => (
             <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
-            <p>My Weather is a personal project of mine that I designed and developed to recreate a personalized weather app that queries real-time weather information from the open weather map API.</p>
+            <p><strong>My Weather</strong> is a personal project of mine that I designed and developed to recreate a personalized weather app that queries real-time weather information from the open weather map API.</p>
         </section>
         <section className = 'projectImg'>            
             <Img fluid={data.WeatherAppImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
@@ -39,11 +39,9 @@ const MyWeather = () => (
         <section className = 'about'> 
             <p>Some technologies used to create this project are React.js, HTML5, and CSS3.</p>
         </section>
-        <section className = 'about'> 
-            <div className = 'linksContainer'>
-                <div className= "links"> <a href= "http://my-weather-personalized.surge.sh/" target= "blank">Website</a></div> 
-                <div className= "links"><a href= "https://github.com/AMSpears/weatherapp" target= "blank">Github</a></div>
-            </div>
+        <section className = 'linksContainer'> 
+            <div className= "links"> <a href= "http://my-weather-personalized.surge.sh/" target= "blank">Website</a></div> 
+            <div className= "links"><a href= "https://github.com/AMSpears/weatherapp" target= "blank">Github</a></div>
         </section>
         <section className = "projects">
             <h1>Other projects</h1>
