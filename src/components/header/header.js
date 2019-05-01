@@ -28,7 +28,7 @@ const Header = ({ siteTitle, home, aboutMe, resume }) => (
           <div className= 'linksContainer'>
             <div><Link to= '/' className= 'links'>{home}</Link></div>
             <div><Link to= '/about-me' className= 'links'>{aboutMe}</Link></div>
-            <div><a href= {Resume} target= 'blank'  className= 'links' id= 'resume'> {resume} <FiExternalLink id = "externalIcon" /> </a></div>
+            <div><a href= {Resume} target= 'blank'  className= 'links' id= 'resume' aria-label="Resume"> {resume} <FiExternalLink id = "externalIcon" /> </a></div>
           </div>
       </nav>
   </header>
