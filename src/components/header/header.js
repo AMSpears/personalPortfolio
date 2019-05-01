@@ -18,20 +18,18 @@ import './header.scss'
 const Header = ({ siteTitle, home, aboutMe, resume }) => (
   <header>
       <nav>
-        <ul>
-          <div className = 'mobileNav'>
-            <li><Link to='/' id= 'logo'> {siteTitle}</Link></li>
+        <div className = 'mobileNav'>
+          <div><Link to='/' id= 'logo'> {siteTitle}</Link></div>
             <div>
-              <li><button id = 'menuIcon' onClick = {UpdateHeader}><TiThMenu/></button></li>
-              <li><button id = 'menuExitIcon' onClick = {UpdateHeader}><TiTimes/></button></li>
+              <div><button id = 'menuIcon' tabindex="0" role="button" aria-pressed="false" onClick = {UpdateHeader}><TiThMenu/></button></div>
+              <div><button id = 'menuExitIcon' tabindex="1" role="button" aria-pressed="false" onClick = {UpdateHeader}><TiTimes/></button></div>
             </div>
           </div>
           <div className= 'linksContainer'>
-            <li><Link to= '/' className= 'links'>{home}</Link></li>
-            <li><Link to= '/about-me' className= 'links'>{aboutMe}</Link></li>
-            <li><a href= {Resume} target= 'blank'  className= 'links' id= 'resume'> {resume} <FiExternalLink id = "externalIcon" /> </a></li> 
+            <div><Link to= '/' className= 'links'>{home}</Link></div>
+            <div><Link to= '/about-me' className= 'links'>{aboutMe}</Link></div>
+            <div><a href= {Resume} target= 'blank'  className= 'links' id= 'resume'> {resume} <FiExternalLink id = "externalIcon" /> </a></div>
           </div>
-        </ul>
       </nav>
   </header>
 )
