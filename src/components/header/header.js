@@ -10,7 +10,7 @@ import { FiExternalLink } from 'react-icons/fi'
 import { TiThMenu, TiTimes } from 'react-icons/ti'
 
 // header nav function
-import UpdateHeader from "./headerNavFunc"
+import UpdateHeader from './headerNavFunc'
 
 import './header.scss'
 
@@ -21,14 +21,14 @@ const Header = ({ siteTitle, home, aboutMe, resume }) => (
         <div className = 'mobileNav'>
           <div><Link to='/' id= 'logo'> {siteTitle}</Link></div>
             <div>
-              <div><button id = 'menuIcon' tabindex="0" role="button" aria-pressed="false" onClick = {UpdateHeader}><TiThMenu/></button></div>
-              <div><button id = 'menuExitIcon' tabindex="1" role="button" aria-pressed="false" onClick = {UpdateHeader}><TiTimes/></button></div>
+              <div><button id = 'menuIcon' tabindex='0' role='button' aria-pressed='false'  onClick = {UpdateHeader}><TiThMenu/></button></div>
+              <div><button id = 'menuExitIcon' tabindex='1' role='button' aria-pressed='false' onClick = {UpdateHeader}><TiTimes/></button></div>
             </div>
           </div>
           <div className= 'linksContainer'>
             <div><Link to= '/' className= 'links'>{home}</Link></div>
             <div><Link to= '/about-me' className= 'links'>{aboutMe}</Link></div>
-            <div><a href= {Resume} target= 'blank'  className= 'links' id= 'resume' aria-label="Resume"> {resume} <FiExternalLink id = "externalIcon" /> </a></div>
+            <div><a href= {Resume} target= 'blank'  className= 'links' id= 'resume' aria-label='Resume'> {resume} <FiExternalLink id = "externalIcon" /> </a></div>
           </div>
       </nav>
   </header>
