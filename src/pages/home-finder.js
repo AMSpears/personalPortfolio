@@ -11,7 +11,14 @@ import '../components/projectPages.scss'
 
 const HomeFinder = () => (
     <StaticQuery query = { graphql `{
-        HeaderImg: file(relativePath: {eq: "web-full-width.png"}) {
+        HeaderImg: file(relativePath: {eq: "projects/homeFinder/home-finder-1.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1600 ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        ProjectImgOne: file(relativePath: {eq: "projects/homeFinder/home-finder-2.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1600 ) {
                     ...GatsbyImageSharpFluid
@@ -29,11 +36,10 @@ const HomeFinder = () => (
             <p><strong>Home Finder</strong> is a project I worked on while at General Assembly. For this project, I collaborated with other engineers to create a fun and interactive app where the user can search for and add listings. We developed this project with the intent of gaining a deeper understanding of building full stack applications. </p>
         </section>
         <section className = 'projectImg'>
+            <Img fluid={data.ProjectImgOne.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
             <p>Some technologies used for this project are React.js, Node.js, Express.js, HTML5, and CSS3. </p>
-        </section>
-        <section className = 'projectImg'>
         </section>
         <section className = 'projectsLinksContainer'> 
             <div className= "links"> <a href= "http://home-finder.surge.sh/homes" target= "blank">Website</a></div> 
