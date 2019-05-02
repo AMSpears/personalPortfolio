@@ -39,7 +39,7 @@ const MyWeather = () => (
         <section className = 'about'> 
             <p>Some technologies used to create this project are React.js, HTML5, and CSS3.</p>
         </section>
-        <section className = 'linksContainer'> 
+        <section className = 'projectsLinksContainer'> 
             <div className= "links"> <a href= "http://my-weather-personalized.surge.sh/" target= "blank">Website</a></div> 
             <div className= "links"><a href= "https://github.com/AMSpears/weatherapp" target= "blank">Github</a></div>
         </section>

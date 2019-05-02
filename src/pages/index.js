@@ -44,7 +44,7 @@ const IndexPage = () => (
       <section className = 'intro'> 
           <h1>About Me</h1>
           <hr/>
-          <p>Hi, I'm <strong>Angie Spears</strong>, a <strong>Front End Software Engineer</strong>. I am an ambitious, self-motivated and solutions-driven individual. I recognize needs, perfect the details and use strategic thinking to achieve goals</p>
+          <p>Hi, I'm <strong>Angie Spears</strong>, a <strong>Front End Software Engineer</strong>. I am an ambitious, self-motivated and solutions-driven individual. I recognize needs, perfect the details and use strategic thinking to achieve goals.</p>
       </section>
       <section className= 'brands'> 
           <h1>Brands I've worked with</h1>

@@ -43,7 +43,7 @@ const SFTSamsung = () => (
         <section className = 'projectImg'>
             <Img fluid={data.SamsungImg1.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
-        <section className = 'linksContainer'> 
+        <section className = 'projectsLinksContainer'> 
             <div className= "links"> <a href= "https://www.samsung.com/us/solvefortomorrow/" target= "blank">Website</a></div> 
         </section>
         <section className = "projects">

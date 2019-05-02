@@ -43,7 +43,7 @@ const AboveAllSecurity = () => (
         </section>
         <section className = 'projectImg'>
         </section>
-        <section className = 'linksContainer'> 
+        <section className = 'projectsLinksContainer'> 
             <div className= "links"> <a href= "https://www.aboveall-security.com/" target= "blank">Website</a></div> 
             <div className= "links"><a href= "https://github.com/AMSpears/above-all-security" target= "blank">Github</a></div>
         </section>

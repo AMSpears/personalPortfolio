@@ -51,7 +51,7 @@ const FRSVerizon = () => (
         <section className = 'projectImg'>
             <Img fluid={data.VerizonImg3.childImageSharp.fluid} fadeIn={false} alt='header' />
         </section>
-        <section className = 'linksContainer'> 
+        <section className = 'projectsLinksContainer'> 
             <div className= "links"> <a href= "https://allourthanks.com/" target= "blank">Website</a></div> 
         </section>
         <section className = "projects">

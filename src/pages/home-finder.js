@@ -35,7 +35,7 @@ const HomeFinder = () => (
         </section>
         <section className = 'projectImg'>
         </section>
-        <section className = 'linksContainer'> 
+        <section className = 'projectsLinksContainer'> 
             <div className= "links"> <a href= "http://home-finder.surge.sh/homes" target= "blank">Website</a></div> 
             <div className= "links"><a href= "https://github.com/AMSpears/home-app-frontend" target= "blank">Github</a></div>
         </section>
