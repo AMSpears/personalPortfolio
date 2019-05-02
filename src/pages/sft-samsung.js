@@ -36,14 +36,12 @@ const SFTSamsung = () => (
             <p>While at R/GA,  I worked on the Samsung: <strong>Solve For Tomorrow </strong>campaign. For each new phase of this campaign, I made updates in collaboration with other engineers, designers,  QA engineers, and other disciples. </p>
         </section>
         <section className = 'projectImg'>
+            <Img fluid={data.SamsungImg1.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
         </section>
         <section className = 'about'> 
             <p>Some technologies used to update this site were Javascript, HTML5, and SASS. </p>
         </section>
-        <section className = 'projectImg'>
-            <Img fluid={data.SamsungImg1.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
-        </section>
-        <section className = 'projectsLinksContainer'> 
+         <section className = 'projectsLinksContainer'> 
             <div className= "links"> <a href= "https://www.samsung.com/us/solvefortomorrow/" target= "blank">Website</a></div> 
         </section>
         <section className = "projects">

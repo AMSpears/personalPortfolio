@@ -9,10 +9,10 @@
 }
 
 .about {
-    padding: 40px;
+    margin: 40px;
 
     @media only screen and (min-width: 1024px) {
-        padding: 100px 120px;
+        margin: 100px 120px;
     }
 
     p {
@@ -28,10 +28,10 @@
 
 .projectsLinksContainer {
     display: flex;
-    padding: 40px;
+    margin: 20px;
 
     @media only screen and (min-width: 1024px) {
-        padding: 120px;
+        padding: 40px 100px;
     }
 
      .links {
@@ -54,10 +54,10 @@
      }
  }
 .projectImg {
-    padding: 0 40px;
+    margin: 0 40px;
     
     @media only screen and (min-width: 1024px) {
-        padding: 0 100px;
+        margin: 0 100px;
 
     }
 
