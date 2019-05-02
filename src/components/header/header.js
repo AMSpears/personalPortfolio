@@ -21,8 +21,8 @@ const Header = ({ siteTitle, home, aboutMe, resume }) => (
         <div className = 'mobileNav'>
           <div><Link to='/' id= 'logo'> {siteTitle}</Link></div>
             <div>
-              <div><button id = 'menuIcon' tabindex='0' role='button' aria-pressed='false'  onClick = {UpdateHeader}><TiThMenu/></button></div>
-              <div><button id = 'menuExitIcon' tabindex='1' role='button' aria-pressed='false' onClick = {UpdateHeader}><TiTimes/></button></div>
+              <div><button id = 'menuIcon' tabIndex='0' role='button' aria-pressed='false'  onClick = {UpdateHeader}><TiThMenu/></button></div>
+              <div><button id = 'menuExitIcon' tabIndex='1' role='button' aria-pressed='false' onClick = {UpdateHeader}><TiTimes/></button></div>
             </div>
           </div>
           <div className= 'linksContainer'>
