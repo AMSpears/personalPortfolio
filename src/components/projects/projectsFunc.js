@@ -1,6 +1,6 @@
 // function checks url and hides the active project item container link
 const urlCheck = () => {
-    const path = window.location.pathname
+    const target = window.location.pathname
     const sftSamsungContainer = document.querySelector('#sftSamsung')
     const frsVerizonContainer = document.querySelector('#frsVerizon')
     const aboveAllSecurityContainer = document.querySelector('#aboveAllSecurity')
@@ -11,13 +11,13 @@ const urlCheck = () => {
     const shoppingListContainer = document.querySelector('#shoppingList')
     const homeFinderContainer = document.querySelector('#homeFinder')
 
-    switch (path) {
+   switch (target) {
         case '/sft-samsung':
             sftSamsungContainer.style.display = 'none'
             break
         case '/frs-verizon':
             frsVerizonContainer.style.display = 'none'
-            break
+             break
         case '/above-all-security':
             aboveAllSecurityContainer.style.display = 'none'
             break

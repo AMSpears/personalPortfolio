@@ -37,7 +37,7 @@ header {
                text-decoration: none;
                cursor: pointer;
           }
-
+          
           .mobileNav {
                display: flex;
                justify-content: space-between;
@@ -91,6 +91,10 @@ header {
                     @media only screen and (min-width:768px) {
                          font-size: 16px;
                          margin: auto 20px;
+                    }  
+                    
+                    &:hover {
+                         color: $secondary-color;
                     }
                }
 
@@ -103,6 +107,10 @@ header {
                          
                          #externalIcon {
                               display: none;
+                         }
+
+                         &:hover {
+                              background-color: $secondary-color;
                          }
                     }
                }   
@@ -124,6 +132,10 @@ header {
                z-index:3;
           }
      }
+
+
+
+
 }
 
 

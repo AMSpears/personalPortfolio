@@ -14,13 +14,9 @@ const UpdateHeader = () => {
     if (document.querySelector('.active') !== null) {
         menuOpen.style.display = 'none'
         menuExit.style.display = 'block'
-                    console.log(menuItems)
-
     } else {
         menuOpen.style.display = 'block'
         menuExit.style.display = 'none'
-                    console.log(menuItems)
-
     }
 }
 

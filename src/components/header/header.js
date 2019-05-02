@@ -21,14 +21,14 @@ const Header = ({ siteTitle, home, aboutMe, resume }) => (
         <div className = 'mobileNav'>
           <div><Link to='/' id= 'logo'> {siteTitle}</Link></div>
             <div>
-              <div><button id = 'menuIcon' tabIndex='0' role='button' aria-pressed='false'  onClick = {UpdateHeader}><TiThMenu/></button></div>
-              <div><button id = 'menuExitIcon' tabIndex='1' role='button' aria-pressed='false' onClick = {UpdateHeader}><TiTimes/></button></div>
+              <div><button id = 'menuIcon' tabIndex='0' aria-pressed='false'  onClick = {UpdateHeader}><TiThMenu/></button></div>
+              <div><button id = 'menuExitIcon' tabIndex='1'  aria-pressed='false' onClick = {UpdateHeader}><TiTimes/></button></div>
             </div>
           </div>
           <div className= 'linksContainer'>
-            <div><Link to= '/' className= 'links'>{home}</Link></div>
-            <div><Link to= '/about-me' className= 'links'>{aboutMe}</Link></div>
-            <div><a href= {Resume} target= 'blank'  className= 'links' id= 'resume' aria-label='Resume'> {resume} <FiExternalLink id = "externalIcon" /> </a></div>
+              <div><Link to= '/' className= 'links' id= "home">{home}</Link></div>
+              <div><Link to= '/about-me' className= 'links'  id= "about">{aboutMe}</Link></div>   
+              <div><a href= {Resume} target= 'blank' className= 'links' id= 'resume' aria-label='Resume'> {resume} <FiExternalLink id = "externalIcon" /> </a></div>
           </div>
       </nav>
   </header>

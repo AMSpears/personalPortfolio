@@ -15,21 +15,21 @@ const IndexPage = () => (
     <StaticQuery query = { graphql `{
       HeaderImg: file(relativePath: {eq: "home_header.jpg"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 1600, quality: 100) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
       Samsung: file(relativePath: {eq: "logos/samsung.png"}) {
             childImageSharp {
-                fluid(maxWidth: 200) {
+                fluid(maxWidth: 1600) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
       Verizon: file(relativePath: { eq: "logos/verizon.png"}) {
             childImageSharp {
-                fluid(maxWidth: 200) {
+                fluid(maxWidth: 1600) {
                     ...GatsbyImageSharpFluid
                 }
             }
