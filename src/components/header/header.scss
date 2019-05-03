@@ -91,13 +91,14 @@ header {
                     @media only screen and (min-width:768px) {
                          font-size: 16px;
                          margin: auto 20px;
-                    }  
-                    
+                    } 
+               }
+               #home, #about {
                     &:hover {
-                         color: $secondary-color;
+                         border-bottom: 4px solid $primary-color;
                     }
                }
-
+               
                #resume {
                     @media only screen and (min-width:768px) {
                          background-color: $primary-color;

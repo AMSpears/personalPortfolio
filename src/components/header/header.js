@@ -14,7 +14,6 @@ import UpdateHeader from './headerNavFunc'
 
 import './header.scss'
 
-
 const Header = ({ siteTitle, home, aboutMe, resume }) => (
   <header>
       <nav>
