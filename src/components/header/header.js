@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from "gatsby"
 import 'gatsby-plugin-sass'
+
 //resume
 import Resume from '../resume/AngieSpears_Resume.pdf'
 
@@ -14,6 +15,10 @@ import UpdateHeader from './headerNavFunc'
 
 import './header.scss'
 
+const selectedStyle = {
+  borderBottom: "4px solid #73D0F9"
+}
+
 const Header = ({ siteTitle, home, aboutMe, resume }) => (
   <header>
       <nav>
@@ -25,8 +30,8 @@ const Header = ({ siteTitle, home, aboutMe, resume }) => (
             </div>
           </div>
           <div className= 'linksContainer'>
-              <div><Link to= '/' className= 'links' id= "home">{home}</Link></div>
-              <div><Link to= '/about-me' className= 'links'  id= "about">{aboutMe}</Link></div>   
+              <div><Link to= '/' className= 'links' id= "home"  activeStyle={selectedStyle} >{home}</Link></div>
+              <div><Link to= '/about-me' className= 'links'  id= "about"  activeStyle={selectedStyle}>{aboutMe}</Link></div>   
               <div><a href= {Resume} target= 'blank' className= 'links' id= 'resume' aria-label='Resume'> {resume} <FiExternalLink id = "externalIcon" /> </a></div>
           </div>
       </nav>
