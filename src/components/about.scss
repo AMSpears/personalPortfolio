@@ -91,10 +91,8 @@
 
             p:last-of-type {
                 text-align: center;
-
-                .dot {
-                    font-size: 2px;
-                    padding: 2px 2px;
+                
+                span {
                     color: $secondary-color;
                 }
             }
