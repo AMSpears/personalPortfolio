@@ -21,10 +21,8 @@ const Footer = () => (
           </div>
           <div className = 'contact'>
             <h1>Contact</h1>
-            <p>hello@angiespears.com</p>
-            <p>571-659-8072</p>
+            <a href='mailto:hello@angiespears.com?subject=Mail from Personal Site'>hello@angiespears.com</a> 
           </div>
-
           <div className = 'location'>
               <h1>Proudly based in NYC.</h1>
           </div>
