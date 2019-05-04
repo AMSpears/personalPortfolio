@@ -16,7 +16,7 @@ import UpdateHeader from './headerNavFunc'
 import './header.scss'
 
 const selectedStyle = {
-  borderBottom: "4px solid #73D0F9"
+  borderBottom: "4px solid #D6D6D6"
 }
 
 const Header = ({ siteTitle, home, aboutMe, resume }) => (
