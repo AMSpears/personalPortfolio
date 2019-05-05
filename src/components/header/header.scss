@@ -97,8 +97,9 @@ header {
                     } 
                }
                #home, #about {
+                    padding-bottom: 8px;
                     &:hover {
-                         border-bottom: 4px solid $primary-color;
+                         border-bottom: 4px solid $hover-color;
                     }
                }
                
