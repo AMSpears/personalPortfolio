@@ -13,7 +13,7 @@
         text-align: center;
         color: $black;
         font-size: 18px;
-        font-family: $font-stack;
+        font-family: $font-stack-secondary;
         text-transform: uppercase;
         margin-bottom: 10px;
     }
@@ -88,7 +88,7 @@
                             position: absolute;
                             top: 50%;
                             left: 50%;
-                            font-family: $font-stack;
+                            font-family: $font-stack-secondary;
                             font-size: 48px;
                             text-align: center;
                             color: $white;
@@ -101,7 +101,7 @@
             }
             
             h2 {
-                font-family: $font-stack;
+                font-family: $font-stack-primary;
                 font-size: 16px;
                 font-weight: 400;
                 color: $black;
@@ -113,7 +113,7 @@
             }
 
             p {
-                font-family: $font-stack;
+                font-family: $font-stack-secondary;
                 font-size: 11px;
                 font-weight: bold;
                 color: $secondary-color;

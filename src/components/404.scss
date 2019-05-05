@@ -15,7 +15,7 @@
     }
     
     h1 {
-        font-family: $font-stack;
+        font-family: $font-stack-secondary;
         font-weight: 600;
         font-size: 40px;
         @media only screen and (min-width: 1024px) {
@@ -24,7 +24,7 @@
     }
 
     p {
-        font-family: $font-stack;
+        font-family: $font-stack-primary;
         font-size:25px;
     }
 }

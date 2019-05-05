@@ -18,7 +18,7 @@ header {
           list-style: none;
           white-space: nowrap;
           overflow: hidden;
-          font-family: $font-stack;
+          // font-family: $font-stack-secondary;
           padding: 24px 27px;
           margin:0;
           
@@ -45,6 +45,7 @@ header {
 
                #logo {
                     color: $primary-color;
+                    font-family: $font-stack-primary;
                     font-size: 24px;
                     font-weight: 500;
 
@@ -85,8 +86,10 @@ header {
                     color: $black;
                     text-transform: uppercase;
                     margin: auto 0;
+                    font-family: $font-stack-secondary;
                     font-size: 32px;
                     font-weight: 500;
+                    
                     
                     @media only screen and (min-width:768px) {
                          font-size: 16px;

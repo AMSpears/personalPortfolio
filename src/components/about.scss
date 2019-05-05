@@ -60,7 +60,7 @@
         }
 
         .detailsContainer {
-            font-family: $font-stack;
+            font-family: $font-stack-secondary;
             padding: 40px 0 0 0;
 
             @media only screen and (min-width: 1024px) {
@@ -70,6 +70,7 @@
 
             h1 {
                 @extend %mainHeaderCommons;
+                font-family: $font-stack-primary;
                 display: none;
 
                 @media only screen and (min-width: 1024px) {
@@ -79,18 +80,21 @@
 
             p {
                 @extend %bodyCommons;
+                font-family: $font-stack-secondary;
                 color: $black;
                 text-align: left;
             }
 
             h2 {
                 font-size: 18px;
+                font-family: $font-stack-secondary;
                 color: $secondary-color;
                 text-align: center;
             }
 
             p:last-of-type {
                 text-align: center;
+                font-family: $font-stack-primary;
                 
                 span {
                     color: $secondary-color;

@@ -2,7 +2,6 @@
 
 %common-text {
     color: $white;
-    font-family: $font-stack;
     text-align: left;
 }
 
@@ -30,6 +29,7 @@ footer {
         h1 {
             font-size: 30px;
             font-weight: 400;
+            font-family: $font-stack-primary;
             @extend %common-text;
 
             @media only screen and (min-width: 1024px) {
@@ -40,6 +40,7 @@ footer {
         a {
             font-size: 18px;
             text-decoration: none;
+            font-family: $font-stack-secondary;
             @extend %common-text;
 
         }
