@@ -22,14 +22,14 @@ const IndexPage = () => (
         }
       Samsung: file(relativePath: {eq: "logos/samsung.png"}) {
             childImageSharp {
-                fluid(maxWidth: 1600, quality: 100) {
+                fluid(maxWidth: 400) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
       Verizon: file(relativePath: { eq: "logos/verizon.png"}) {
             childImageSharp {
-                fluid(maxWidth: 1600, quality: 100) {
+                fluid(maxWidth: 400) {
                     ...GatsbyImageSharpFluid
                 }
             }
