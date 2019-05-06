@@ -13,14 +13,14 @@ const TriviaGame = () => (
     <StaticQuery query = { graphql `{
         HeaderImg: file(relativePath: {eq: "projects/triviaGame/state-capital-1.jpg"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 1600, quality: 100) {
                     ...GatsbyImageSharpFluid
                 }
             }
         } 
         TriviaImg1: file(relativePath: {eq: "projects/triviaGame/state-capital-2.jpg"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 1600, quality: 100 ) {
                     ...GatsbyImageSharpFluid
                 }
             }

@@ -13,14 +13,14 @@ const SFTSamsung = () => (
     <StaticQuery query = { graphql `{
         HeaderImg: file(relativePath: {eq: "projects/sftSamsung/samsung-1.jpg"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 1600, quality: 100) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
         SamsungImg1: file(relativePath: {eq: "projects/sftSamsung/samsung-2.jpg"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 1600, quality:100) {
                     ...GatsbyImageSharpFluid
                 }
             }

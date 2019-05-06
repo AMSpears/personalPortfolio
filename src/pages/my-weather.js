@@ -11,14 +11,14 @@ const MyWeather = () => (
     <StaticQuery query = { graphql `{
         HeaderImg: file(relativePath: {eq: "projects/weatherApp/weather-app.jpg"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 1600, quality: 100) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
         WeatherAppImg: file(relativePath: {eq: "projects/weatherApp/weather-app-2.jpg"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 1600, quality: 100 ) {
                     ...GatsbyImageSharpFluid
                 }
             }

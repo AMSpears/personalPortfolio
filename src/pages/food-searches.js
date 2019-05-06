@@ -14,14 +14,14 @@ const FoodSearches = () => (
     <StaticQuery query = { graphql `{
         HeaderImg: file(relativePath: {eq: "projects/foodSearch/food-search-1.jpg"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 1600, quality: 100) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
         ProjectImgOne: file(relativePath: {eq: "projects/foodSearch/food-search-2.jpg"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 1600, quality: 100) {
                     ...GatsbyImageSharpFluid
                 }
             }

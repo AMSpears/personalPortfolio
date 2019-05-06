@@ -13,14 +13,14 @@ const AboveAllSecurity = () => (
     <StaticQuery query = { graphql `{
         HeaderImg: file(relativePath: {eq: "projects/aboveAllSecurity/above-all-security1.jpg"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 1600, quality: 100) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
         AboveAllSecurityImg: file(relativePath: {eq: "projects/aboveAllSecurity/above-all-security2.jpg"}) {
             childImageSharp {
-                fluid(maxWidth: 1600 ) {
+                fluid(maxWidth: 1600, quality: 100 ) {
                     ...GatsbyImageSharpFluid
                 }
             }

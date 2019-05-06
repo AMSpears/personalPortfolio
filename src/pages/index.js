@@ -13,7 +13,7 @@ import '../components/index.scss'
 
 const IndexPage = () => (
     <StaticQuery query = { graphql `{
-      HeaderImg: file(relativePath: {eq: "home_header.jpg"}) {
+      HeaderImg: file(relativePath: {eq: "home_header.png"}) {
             childImageSharp {
                 fluid(maxWidth: 1600, quality: 100) {
                     ...GatsbyImageSharpFluid
@@ -22,14 +22,14 @@ const IndexPage = () => (
         }
       Samsung: file(relativePath: {eq: "logos/samsung.png"}) {
             childImageSharp {
-                fluid(maxWidth: 1600) {
+                fluid(maxWidth: 1600, quality: 100) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
       Verizon: file(relativePath: { eq: "logos/verizon.png"}) {
             childImageSharp {
-                fluid(maxWidth: 1600) {
+                fluid(maxWidth: 1600, quality: 100) {
                     ...GatsbyImageSharpFluid
                 }
             }
@@ -39,7 +39,7 @@ const IndexPage = () => (
   <Layout>
       <SEO title='Angie Spears' keywords={[`gatsby`, `application`, `react`, `front-end software Engineer`, `software Engineer`, `nyc`]} />
       <section className = 'imgPlaceholder'>
-          <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt= 'header'/>
+        <Img fluid={data.HeaderImg.childImageSharp.fluid} fadeIn={false} alt='header' />
       </section>
       <section className = 'intro'> 
           <h1>About Me</h1>
