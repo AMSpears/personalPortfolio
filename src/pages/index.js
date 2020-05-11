@@ -8,7 +8,6 @@ import SEO from '../components/seo'
 import Technologies from '../components/technologies/technologies'
 //projects
 import Projects from "../components/projects/projects"
-
 import '../components/index.scss'
 
 const IndexPage = () => (
